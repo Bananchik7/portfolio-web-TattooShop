@@ -22,3 +22,114 @@ li {
   display: block;
   margin: 0;
 }
+.header {
+  margin: 0 auto;
+}
+.header__conteiner {
+  width: 100%;
+}
+.header__conteiner-delivery {
+  width: 100%;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  background: #2c2c2c;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 0.7px;
+}
+.header__conteiner-menu {
+  display: flex;
+  margin-top: 20px;
+}
+.header__menu-logo {
+  color: white;
+  margin-left: 80px;
+  font-size: 25px;
+  margin-right: 12%;
+  letter-spacing: 0.7px;
+}
+.header__nav-row {
+  display: flex;
+  margin-top: 7px;
+}
+.header__nav-row li a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.7px;
+  padding-right: 30px;
+  font-weight: 700;
+  font-size: 13px;
+}
+.header__nav-row li a:hover {
+  color: #fff383;
+}
+.header__menu-language {
+  display: flex;
+  color: white;
+  letter-spacing: 0.7px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+.header__language-ru {
+  margin-right: 5px;
+}
+.header__language {
+  margin-right: 5px;
+}
+.header__conteiner-title {
+  color: white;
+  font-size: 70px;
+  margin-top: 90px;
+  margin-left: 150px;
+}
+.header__conteiner-scroll {
+  margin-top: 320px;
+  margin-left: 150px;
+  text-decoration: underline;
+}
+.header__scroll-text {
+  color: white;
+}
+.header__background {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: -100;
+}
+.header__ticker {
+  margin-top: 100px;
+}
+.header__ticker-marquee {
+  color: white;
+  background: #e49d86;
+  height: 35px;
+  font-size: 15px;
+  letter-spacing: 0.7px;
+  padding-top: 12px;
+}
+.new__conteiner {
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -4px;
+}
+.new__conteiner-title {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 80px;
+}
+.new__title-title {
+  font-size: 30px;
+  letter-spacing: 0.7px;
+}
+.new__title-catalog {
+  font-size: 20px;
+  letter-spacing: 0.7px;
+  margin-left: 77%;
+  margin-top: 7px;
+  text-decoration: underline;
+}
