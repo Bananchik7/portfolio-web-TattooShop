@@ -448,6 +448,8 @@ li {
 }
 .collaborations__conteiner-list {
   display: flex;
+  padding-left: -2px;
+  margin-right: -5px;
 }
 .collaborations__list-info {
   width: 357px;
@@ -581,4 +583,9 @@ li {
 }
 .faq__question-scroll {
   display: none;
+}
+.footer__conteiner {
+  height: 400px;
+  background: #1c1c1c;
+  color: white;
 }
