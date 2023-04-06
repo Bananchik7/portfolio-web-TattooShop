@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Каталог</title>
+    <link rel="stylesheet" href="css/catalog.css" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="header__container">
+        <div class="header__conteiner-delivery">Быстрая доставка по России</div>
+        <div class="header__conteiner-menu">
+          <div class="header__menu-logo">Transitional Tattoos</div>
+          <ul class="header__nav-row">
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Для бизнеса</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">Как наносить</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+          <div class="header__menu-image">
+            <img
+              class="header__image-search"
+              src="image/index/header__search.svg"
+            />
+            <img
+              class="header__image-basket"
+              src="image/index/header__basket.svg"
+            />
+          </div>
+          <div class="header__menu-language">
+            <div class="header__language-ru">RU</div>
+            <div class="header__language">/</div>
+            <div class="header__language-en">EN</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="basket" class="basket"></section>
+    <section id="button" class="button">
+      <div class="button__conteiner">
+        <div class="button__conteiner-image">
+          <img class="button__image" src="image/catalog/button-image-1.jpeg" />
+          <div class="button__title">Тату</div>
+        </div>
+        <div class="button__conteiner-image">
+          <img class="button__image" src="image/catalog/button__image-2.jp2" />
+          <div class="button__title">Веснушки</div>
+        </div>
+        <div class="button__conteiner-image">
+          <img class="button__image" src="image/catalog/button__image-4.jpeg" />
+          <div class="button__title">Значки</div>
+        </div>
+        <div class="button__conteiner-image">
+          <img class="button__image" src="image/catalog/button__image-3.tiff" />
+          <div class="button__title">Кристаллы</div>
+        </div>
+        <div class="button__conteiner-image">
+          <img
+            class="button__image"
+            src="image/index/catalog__index/catalog__image-1.jpeg"
+          />
+          <div class="button__title">Подарочный сертификат</div>
+        </div>
+      </div>
+    </section>
+    <section id="title" class="title">
+      <div class="title__title">Все товары</div>
+    </section>
+    <section id="catalog" class="catalog">
+      <div class="catalog__conteiner">
+        <div class="catalog__conteiner-menu">
+          <ul class="catalog__menu-list">
+            <li>
+              <a href="" class="catalog__list-point">ВСЕ</a>
+            </li>
+            <li><a href="" class="catalog__list-point">НОВИНКИ</a></li>
+            <li><a href="" class="catalog__list-point">ХИТЫ</a></li>
+            <li><a href="" class="catalog__list-point">SALE</a></li>
+          </ul>
+        </div>
+        <div class="catalog__conteiner-filter">
+          <div class="catalog__filter-list">
+            <div class="catalog__list-artist"></div>
+          </div>
+          <div class="catalog__filter-sample">
+            <div class="catalog__sample-field">
+              <select class="catalog__field__select">
+                <option value="20">Порядок: по умолчанию</option>
+                <option value="30">Цена: по возрастанию</option>
+                <option value="40">Цена: по убыванию</option>
+                <option value="40">Название: А-Я</option>
+                <option value="40">Название: Я-А</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="catalog__conteiner-sortorder">
+          <div class="catalog__sortorder-all">
+            <div class="catalog__row">
+              <div data-product-id="freckles-001" class="catalog__row-product">
+                <div class="catalog__product-info">
+                  <div class="catalog__product-image">
+                    <img
+                      class="catalog__image"
+                      id="catalog__image-freckles-001"
+                      src="image/catalog/catalog__freckles/001.png"
+                    />
+                  </div>
+                  <div class="catalog__product-title">
+                    Fake Freckles: Gold, silver
+                  </div>
+                  <div class="catalog__product-details">
+                    Переводные веснушки
+                  </div>
+                  <div class="catalog__product-price">390 RUB</div>
+                </div>
+                <button class="catalog__product-basket">в корзину</button>
+              </div>
+              <div data-product-id="freckles-002" class="catalog__row-product">
+                <div class="catalog__product-info">
+                  <div class="catalog__product-image">
+                    <img
+                      class="catalog__image"
+                      id="catalog__image-freckles-002"
+                      src="image/catalog/catalog__freckles/002.png"
+                    />
+                  </div>
+                  <div class="catalog__product-title">
+                    Fake Freckles: Natural, Gold
+                  </div>
+                  <div class="catalog__product-details">
+                    Переводные веснушки
+                  </div>
+                  <div class="catalog__product-price">390 RUB</div>
+                </div>
+                <button class="catalog__product-basket">в корзину</button>
+              </div>
+              <div data-product-id="freckles-003" class="catalog__row-product">
+                <div class="catalog__product-info">
+                  <div class="catalog__product-image">
+                    <img
+                      class="catalog__image"
+                      id="catalog__image-freckles-003"
+                      src="image/catalog/catalog__freckles/003.png"
+                    />
+                  </div>
+                  <div class="catalog__product-title">
+                    Fake Freckles: Herbarium
+                  </div>
+                  <div class="catalog__product-details">
+                    Переводные веснушки
+                  </div>
+                  <div class="catalog__product-price">390 RUB</div>
+                </div>
+                <button class="catalog__product-basket">в корзину</button>
+              </div>
+              <div data-product-id="freckles-004" class="catalog__row-product">
+                <div class="catalog__product-info">
+                  <div class="catalog__product-image">
+                    <img
+                      class="catalog__image"
+                      id="catalog__image-freckles-004"
+                      src="image/catalog/catalog__freckles/004.png"
+                    />
+                  </div>
+                  <div class="catalog__product-title">
+                    Fake Freckles: Botanica
+                  </div>
+                  <div class="catalog__product-details">
+                    Переводные веснушки
+                  </div>
+                  <div class="catalog__product-price">390 RUB</div>
+                </div>
+                <button class="catalog__product-basket">в корзину</button>
+              </div>
+              <div data-product-id="freckles-005" class="catalog__row-product">
+                <div class="catalog__product-info">
+                  <div class="catalog__product-image">
+                    <img
+                      class="catalog__image"
+                      id="catalog__image-freckles-005"
+                      src="image/catalog/catalog__freckles/005.png"
+                    />
+                  </div>
+                  <div class="catalog__product-title">
+                    Fake Freckles: Summertime
+                  </div>
+                  <div class="catalog__product-details">
+                    Переводные веснушки
+                  </div>
+                  <div class="catalog__product-price">390 RUB</div>
+                </div>
+                <button class="catalog__product-basket">в корзину</button>
+              </div>
+              <div data-product-id="tattoo-001" class="catalog__row-product">
+                <div class="catalog__product-info">
+                  <div class="catalog__product-image">
+                    <img
+                      class="catalog__image"
+                      id="catalog__image-tattoo-001"
+                      src="image/catalog/catalog__tattoo/001.png"
+                    />
+                  </div>
+                  <div class="catalog__product-title">Basic moons</div>
+                  <div class="catalog__product-details">
+                    Переводная татуировка
+                  </div>
+                  <div class="catalog__product-price">390 RUB</div>
+                </div>
+                <button class="catalog__product-basket">в корзину</button>
+              </div>
+              <div data-product-id="tattoo-002" class="catalog__row-product">
+                <div class="catalog__product-info">
+                  <div class="catalog__product-image">
+                    <img
+                      class="catalog__image"
+                      id="catalog__image-tattoo-002"
+                      src="image/catalog/catalog__tattoo/002.png"
+                    />
+                  </div>
+                  <div class="catalog__product-title">
+                    Life is a party (motley)
+                  </div>
+                  <div class="catalog__product-details">
+                    Переводная татуировка
+                  </div>
+                  <div class="catalog__product-price">500 RUB</div>
+                </div>
+                <button class="catalog__product-basket">в корзину</button>
+              </div>
+              <div data-product-id="tattoo-003" class="catalog__row-product">
+                <div class="catalog__product-info">
+                  <div class="catalog__product-image">
+                    <img
+                      class="catalog__image"
+                      id="catalog__image-tattoo-003"
+                      src="image/catalog/catalog__tattoo/003.png"
+                    />
+                  </div>
+                  <div class="catalog__product-title">
+                    Life is a party (white)
+                  </div>
+                  <div class="catalog__product-details">
+                    Переводная татуировка
+                  </div>
+                  <div class="catalog__product-price">500 RUB</div>
+                </div>
+                <button class="catalog__product-basket">в корзину</button>
+              </div>
+              <div data-product-id="tattoo-004" class="catalog__row-product">
+                <div class="catalog__product-info">
+                  <div class="catalog__product-image">
+                    <img
+                      class="catalog__image"
+                      id="catalog__image-tattoo-004"
+                      src="image/catalog/catalog__tattoo/004.png"
+                    />
+                  </div>
+                  <div class="catalog__product-title">Snowflakes</div>
+                  <div class="catalog__product-details">
+                    Переводная татуировка
+                  </div>
+                  <div class="catalog__product-price">500 RUB</div>
+                </div>
+                <button class="catalog__product-basket">в корзину</button>
+              </div>
+              <div data-product-id="tattoo-005" class="catalog__row-product">
+                <div class="catalog__product-info">
+                  <div class="catalog__product-image">
+                    <img
+                      class="catalog__image"
+                      id="catalog__image-tattoo-005"
+                      src="image/catalog/catalog__tattoo/005.png"
+                    />
+                  </div>
+                  <div class="catalog__product-title">Neon moon</div>
+                  <div class="catalog__product-details">
+                    Переводная татуировка
+                  </div>
+                  <div class="catalog__product-price">390 RUB</div>
+                </div>
+                <button class="catalog__product-basket">в корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer" class="footer">
+      <div class="footer__conteiner">
+        <div class="footer__conteiner-menu">
+          <ul class="footer__menu-row">
+            <li class="footer__row-title">ДЛЯ БИЗНЕСА</li>
+            <li class="footer__row-point">
+              <a href="">Сотрудничество</a>
+            </li>
+            <li class="footer__row-point">
+              <a href="">Оптовым покупателям</a>
+            </li>
+          </ul>
+          <ul class="footer__menu-row">
+            <li class="footer__row-title">ИНФОРМАЦИЯ</li>
+            <li class="footer__row-point"><a href="">Каталог</a></li>
+            <li class="footer__row-point"><a href="">Точки продаж</a></li>
+            <li class="footer__row-point">
+              <a href="">Подарочный сертификат</a>
+            </li>
+          </ul>
+          <ul class="footer__menu-row">
+            <li class="footer__row-title">ПОМОЩЬ</li>
+            <li class="footer__row-point">
+              <a href="">Доставка и оплата</a>
+            </li>
+            <li class="footer__row-point"><a href="">Контакты</a></li>
+            <li class="footer__row-point">
+              <a href="">Как наносить?</a>
+            </li>
+          </ul>
+          <div class="footer__menu-search">
+            <div class="footer__search-title">
+              Узнать первым о закрытых распродажах и акциях
+            </div>
+            <div class="footer__search-input">
+              <input class="footer__input-email" value="Ваш email" />
+              <svg
+                class="footer__input-arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="31"
+                height="8"
+                viewBox="0 0 31 8"
+                fill="none"
+              >
+                <path
+                  d="M30.3536 4.35355C30.5488 4.15829 30.5488 3.84171 30.3536 3.64645L27.1716 0.464466C26.9763 0.269204 26.6597 0.269204 26.4645 0.464466C26.2692 0.659728 26.2692 0.976311 26.4645 1.17157L29.2929 4L26.4645 6.82843C26.2692 7.02369 26.2692 7.34027 26.4645 7.53553C26.6597 7.7308 26.9763 7.7308 27.1716 7.53553L30.3536 4.35355ZM0 4.5H30V3.5H0V4.5Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div class="footer__search-info">
+              Нажимая на кнопку, вы даете согласие на обработку персональных
+              <br />
+              данных и соглашаетесь с <b>политикой конфиденциальности</b>.
+            </div>
+          </div>
+        </div>
+        <div class="footer__conteiner-info">
+          <div class="footer__info-logo">© Unicorns out</div>
+          <div class="footer__info-document">Политика конфиденциальности</div>
+          <div class="footer__info-social">
+            <a href="" class="footer__social-image">
+              <img
+                class="footer__image"
+                src="image/index/footer__image-pinterest.svg"
+              />
+            </a>
+            <a href="" class="footer__social-image">
+              <img
+                class="footer__image"
+                src="image/index/footer__image-vk.svg"
+              />
+            </a>
+            <a href="" class="footer__social-image">
+              <img
+                class="footer__image"
+                src="image/index/footer__image-telegram.svg"
+              />
+            </a>
+          </div>
+          <div class="footer__info-payment">
+            <a href="" class="footer__payment-images">
+              <img
+                class="footer__images"
+                src="image/index/footer__image-maestro.svg"
+              />
+            </a>
+            <a href="" class="footer__payment-images">
+              <img
+                class="footer__images"
+                src="image/index/footer__image-visa.svg"
+              />
+            </a>
+            <a href="" class="footer__payment-images">
+              <img
+                class="footer__images"
+                src="image/index/footer__image-mir.svg"
+              />
+            </a>
+            <a href="" class="footer__payment-images">
+              <img
+                class="footer__images"
+                src="image/index/footer__image-mastercard.svg"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
