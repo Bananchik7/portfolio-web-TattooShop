@@ -36,7 +36,41 @@
         </div>
       </div>
     </header>
-    <section id="basket" class="basket"></section>
+    <section id="basket" class="basket">
+      <div class="basket__conteiner-background">
+        <div class="basket__conteiner">
+          <div class="basket__conteiner-title">
+            <div class="basket__title-title">Ваш заказ</div>
+            <img
+              class="basket__title-exit"
+              src="image/index/basket__cross.svg"
+            />
+          </div>
+          <div class="basket__conteiner-shop">
+            <img class="basket__shop-image" />
+            <div class="basket__shop-name"></div>
+            <div class="basket__shop-quantity"></div>
+            <div class="basket__shop-price"></div>
+            <img
+              class="basket__shop-cross"
+              src="image/index/product__cross.svg"
+            />
+          </div>
+          <div class="basket__conteiner-none">
+            <div class="basket__shop-none">Ваша корзина пуста</div>
+          </div>
+          <div class="basket__conteiner-bitton">
+            <button class="basket__button-shop">Оплатить</button>
+            <button class="basket__button-clear">Очистить корзину</button>
+          </div>
+          <div class="basket__conteiner-info">
+            Нажимая на кнопку, вы соглашаетесь с
+            <b>Политикой конфиденциальности</b> и
+            <b>Пользовательским соглашением</b>.
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="button" class="button">
       <div class="button__conteiner">
         <div class="button__conteiner-image">
@@ -98,7 +132,7 @@
         <div class="catalog__conteiner-sortorder">
           <div class="catalog__sortorder-all">
             <div class="catalog__row">
-              <div data-product-id="freckles-001" class="catalog__row-product">
+              <div data-product-id="product-001" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
                     <img
@@ -115,9 +149,9 @@
                   </div>
                   <div class="catalog__product-price">390 RUB</div>
                 </div>
-                <button class="catalog__product-basket">в корзину</button>
+                <button class="catalog__product-button">в корзину</button>
               </div>
-              <div data-product-id="freckles-002" class="catalog__row-product">
+              <div data-product-id="product-002" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
                     <img
@@ -134,9 +168,9 @@
                   </div>
                   <div class="catalog__product-price">390 RUB</div>
                 </div>
-                <button class="catalog__product-basket">в корзину</button>
+                <button class="catalog__product-button">в корзину</button>
               </div>
-              <div data-product-id="freckles-003" class="catalog__row-product">
+              <div data-product-id="product-003" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
                     <img
@@ -153,9 +187,9 @@
                   </div>
                   <div class="catalog__product-price">390 RUB</div>
                 </div>
-                <button class="catalog__product-basket">в корзину</button>
+                <button class="catalog__product-button">в корзину</button>
               </div>
-              <div data-product-id="freckles-004" class="catalog__row-product">
+              <div data-product-id="product-004" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
                     <img
@@ -172,9 +206,9 @@
                   </div>
                   <div class="catalog__product-price">390 RUB</div>
                 </div>
-                <button class="catalog__product-basket">в корзину</button>
+                <button class="catalog__product-button">в корзину</button>
               </div>
-              <div data-product-id="freckles-005" class="catalog__row-product">
+              <div data-product-id="product-005" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
                     <img
@@ -191,9 +225,9 @@
                   </div>
                   <div class="catalog__product-price">390 RUB</div>
                 </div>
-                <button class="catalog__product-basket">в корзину</button>
+                <button class="catalog__product-button">в корзину</button>
               </div>
-              <div data-product-id="tattoo-001" class="catalog__row-product">
+              <div data-product-id="product-006" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
                     <img
@@ -208,9 +242,9 @@
                   </div>
                   <div class="catalog__product-price">390 RUB</div>
                 </div>
-                <button class="catalog__product-basket">в корзину</button>
+                <button class="catalog__product-button">в корзину</button>
               </div>
-              <div data-product-id="tattoo-002" class="catalog__row-product">
+              <div data-product-id="product-007" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
                     <img
@@ -227,9 +261,9 @@
                   </div>
                   <div class="catalog__product-price">500 RUB</div>
                 </div>
-                <button class="catalog__product-basket">в корзину</button>
+                <button class="catalog__product-button">в корзину</button>
               </div>
-              <div data-product-id="tattoo-003" class="catalog__row-product">
+              <div data-product-id="product-008" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
                     <img
@@ -246,9 +280,9 @@
                   </div>
                   <div class="catalog__product-price">500 RUB</div>
                 </div>
-                <button class="catalog__product-basket">в корзину</button>
+                <button class="catalog__product-button">в корзину</button>
               </div>
-              <div data-product-id="tattoo-004" class="catalog__row-product">
+              <div data-product-id="product-009" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
                     <img
@@ -263,9 +297,9 @@
                   </div>
                   <div class="catalog__product-price">500 RUB</div>
                 </div>
-                <button class="catalog__product-basket">в корзину</button>
+                <button class="catalog__product-button">в корзину</button>
               </div>
-              <div data-product-id="tattoo-005" class="catalog__row-product">
+              <div data-product-id="product-010" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
                     <img
@@ -280,7 +314,7 @@
                   </div>
                   <div class="catalog__product-price">390 RUB</div>
                 </div>
-                <button class="catalog__product-basket">в корзину</button>
+                <button class="catalog__product-button">в корзину</button>
               </div>
             </div>
           </div>
@@ -397,4 +431,5 @@
       </div>
     </footer>
   </body>
+  <script src="js/catalog_basket.js"></script>
 </html>
