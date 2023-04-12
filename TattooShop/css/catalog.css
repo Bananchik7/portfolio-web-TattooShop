@@ -204,6 +204,18 @@ li {
   letter-spacing: 0.7px;
 }
 .catalog__product-price {
+  display: flex;
+}
+.catalog__price-number {
+  margin-top: 15px;
+  color: #1c1c1c;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Circe";
+  letter-spacing: 0.7px;
+  margin-right: 5px;
+}
+.catalog__price-text {
   margin-top: 15px;
   color: #1c1c1c;
   font-size: 18px;
@@ -416,8 +428,9 @@ li {
 }
 
 /* характеристики корзины */
+
 .basket__conteiner-shop {
-  display: none;
+  display: flex;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 2%;
@@ -428,7 +441,7 @@ li {
 .basket__shop-image {
   width: 80px;
   height: 80px;
-  padding-left: 5%;
+  padding-left: 4%;
   margin-right: 5%;
 }
 .basket__shop-name {
@@ -439,9 +452,10 @@ li {
   font-family: "Circe", Arial, sans-serif;
   font-size: 18px;
   margin-right: 5%;
-  min-width: 220px;
+  width: 230px;
 }
 .basket__shop-quantity {
+  width: 30px;
   margin-top: 5%;
   color: black;
   letter-spacing: 0.7px;
@@ -451,6 +465,8 @@ li {
   margin-right: 5%;
 }
 .basket__shop-price {
+  display: flex;
+  width: 80px;
   margin-top: 5%;
   color: black;
   letter-spacing: 0.7px;
@@ -459,10 +475,14 @@ li {
   font-size: 18px;
   margin-right: 5%;
 }
+.basket__price-number {
+  margin-right: 4px;
+}
 .basket__shop-cross {
   margin-top: 5%;
   width: 20px;
   height: 20px;
+  background-image: url(../image/index/product__cross.svg);
 }
 .basket__conteiner-none {
   margin-left: 10%;
@@ -478,4 +498,69 @@ li {
   border-bottom: 1px solid #6b6b6b;
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.basket__conteiner-summ {
+  display: flex;
+  margin-left: 70%;
+  margin-top: 5%;
+}
+.basket__summ-total {
+  font-size: 22px;
+  letter-spacing: 0.7px;
+  font-weight: 400;
+  font-family: "Circe", Arial, sans-serif;
+}
+.basket__summ-number {
+  font-size: 20px;
+  letter-spacing: 0.7px;
+  font-weight: 400;
+  font-family: "Circe", Arial, sans-serif;
+  margin-left: 3%;
+  margin-top: 2px;
+}
+
+/* каталог тату */
+.tattoo__menu-list {
+  display: flex;
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
+.tattoo__menu-list li a {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.tattoo__list-point {
+  font-size: 18px;
+  font-weight: 200;
+  font-family: "Circe", Arial, sans-serif;
+  letter-spacing: 0.7px;
+  color: black;
+  text-decoration: none;
+}
+.tattoo__list-point:hover {
+  font-weight: 700;
+}
+.tattoo__conteiner-sortorder {
+  margin-left: 125px;
+}
+.tattoo__sortorder-animals {
+  display: none;
+}
+.tattoo__sortorder-plane {
+  display: none;
+}
+.tattoo__sortorder-linii {
+  display: none;
+}
+.tattoo__sortorder-moon {
+  display: none;
+}
+.tattoo__sortorder-set {
+  display: none;
+}
+.tattoo__sortorder-250 {
+  display: none;
 }

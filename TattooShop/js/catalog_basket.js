@@ -1,6 +1,6 @@
 "use string";
 
-// открытие/закрытие
+// Открытие/Закрытие
 let header__image_basket = document.querySelector(".header__image-basket");
 let basket = document.querySelector(".basket");
 let basket__title_exit = document.querySelector(".basket__title-exit");
@@ -11,42 +11,85 @@ basket__title_exit.addEventListener("click", function () {
   basket.style.display = "none";
 });
 
-// каталог с кнопками
-// let freckles_001 = document.querySelector('[data-product-id="freckles-001"]');
+// Добавление в корзину
 
-// let button__freckles_001 = document.querySelector(
-//   '[data-button-id="button__freckles-001"]'
-// );
-
-// добавление в корзину
-let basket__shop_image = document.querySelector(".basket__shop-image");
-let basket__shop_name = document.querySelector(".basket__shop-name");
-let basket__shop_quantity = document.querySelector(".basket__shop-quantity");
-let basket__shop_price = document.querySelector(".basket__shop-price");
-let basket__conteiner_shop = document.querySelector(".basket__conteiner-shop");
 let basket__conteiner_none = document.querySelector(".basket__conteiner-none");
+let basket__button_clear = document.querySelector(".basket__button-clear");
 
-//
-//
-
+// Добавление всех товаров
 let all_product = document.querySelectorAll('[data-product-id^="product"]');
 
-// выбираем кнопку из карточки товара
-
+// Выбираем кнопку из карточки товара
 all_product.forEach(function (one_product) {
   let button_product = one_product.querySelector(".catalog__product-button");
 
   button_product.addEventListener("click", function () {
     basket__conteiner_none.style.display = "none";
-    basket__conteiner_shop.style.display = "flex";
+
+    // создание основного див с элементами товара
+    let basket__conteiner_conteiner = document.querySelector(
+      ".basket__conteiner-conteiner"
+    );
+    let basket__conteiner_shop = document.createElement("div");
+    basket__conteiner_shop.className = "basket__conteiner-shop";
+    basket__conteiner_conteiner.appendChild(basket__conteiner_shop);
+
+    //создание внутренних дивов с элементами товара
+    let basket__shop_image = document.createElement("img");
+    let basket__shop_name = document.createElement("div");
+    let basket__shop_quantity = document.createElement("div");
+    let basket__shop_price = document.createElement("div");
+    let basket__shop_cross = document.createElement("img");
+
+    basket__shop_image.className = "basket__shop-image";
+    basket__shop_name.className = "basket__shop-name";
+    basket__shop_quantity.className = "basket__shop-quantity";
+    basket__shop_price.className = "basket__shop-price";
+    basket__shop_cross.className = "basket__shop-cross";
+
+    basket__conteiner_shop.appendChild(basket__shop_image);
+    basket__conteiner_shop.appendChild(basket__shop_name);
+    basket__conteiner_shop.appendChild(basket__shop_quantity);
+    basket__conteiner_shop.appendChild(basket__shop_price);
+    basket__conteiner_shop.appendChild(basket__shop_cross);
+
+    let basket__price_number = document.createElement("div");
+    let basket__price_text = document.createElement("div");
+
+    basket__price_number.className = "basket__price-number";
+    basket__price_text.className = "basket__price-text";
+
+    basket__shop_price.appendChild(basket__price_number);
+    basket__shop_price.appendChild(basket__price_text);
 
     basket__shop_image.src = one_product.querySelector("img").src;
     basket__shop_name.textContent = one_product.querySelector(
       ".catalog__product-title"
     ).textContent;
     basket__shop_quantity.textContent = "1";
-    basket__shop_price.textContent = one_product.querySelector(
-      ".catalog__product-price"
+    basket__price_number.textContent = one_product.querySelector(
+      ".catalog__price-number"
     ).textContent;
+    basket__price_text.textContent = one_product.querySelector(
+      ".catalog__price-text"
+    ).textContent;
+    basket__shop_cross.src = basket__title_exit.src;
+
+    // удаление позиции в корзине
+    basket__shop_cross.addEventListener("click", function () {
+      if (basket__conteiner_conteiner.children.length > 0) {
+        basket__conteiner_shop.remove();
+      }
+      if (basket__conteiner_conteiner.children.length == 0) {
+        basket__conteiner_shop.remove();
+        basket__conteiner_none.style.display = "block";
+        basket__summ_number.textContent = 0;
+      }
+    });
+    basket__button_clear.addEventListener("click", function () {
+      basket__conteiner_shop.remove();
+      basket__conteiner_none.style.display = "block";
+      basket__summ_number.textContent = 0;
+    });
   });
 });
