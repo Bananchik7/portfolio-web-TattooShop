@@ -2,8 +2,14 @@
 
 // Открытие/Закрытие
 let header__image_basket = document.querySelector(".header__image-basket");
+let index__header__image_basket = document.querySelector(
+  ".index__header__image-basket"
+);
 let basket = document.querySelector(".basket");
 let basket__title_exit = document.querySelector(".basket__title-exit");
+index__header__image_basket.addEventListener("click", function () {
+  basket.style.display = "block";
+});
 header__image_basket.addEventListener("click", function () {
   basket.style.display = "block";
 });
@@ -57,10 +63,8 @@ all_product.forEach(function (one_product) {
     let basket__price_text = document.createElement("div");
 
     basket__price_number.className = "basket__price-number";
-    basket__price_text.className = "basket__price-text";
 
     basket__shop_price.appendChild(basket__price_number);
-    basket__shop_price.appendChild(basket__price_text);
 
     basket__shop_image.src = one_product.querySelector("img").src;
     basket__shop_name.textContent = one_product.querySelector(
@@ -69,9 +73,6 @@ all_product.forEach(function (one_product) {
     basket__shop_quantity.textContent = "1";
     basket__price_number.textContent = one_product.querySelector(
       ".catalog__price-number"
-    ).textContent;
-    basket__price_text.textContent = one_product.querySelector(
-      ".catalog__price-text"
     ).textContent;
     basket__shop_cross.src = basket__title_exit.src;
 
@@ -83,13 +84,11 @@ all_product.forEach(function (one_product) {
       if (basket__conteiner_conteiner.children.length == 0) {
         basket__conteiner_shop.remove();
         basket__conteiner_none.style.display = "block";
-        basket__summ_number.textContent = 0;
       }
     });
     basket__button_clear.addEventListener("click", function () {
       basket__conteiner_shop.remove();
       basket__conteiner_none.style.display = "block";
-      basket__summ_number.textContent = 0;
     });
   });
 });

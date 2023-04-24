@@ -1,113 +1,48 @@
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Anton", sans-serif;
-  color: black;
-  font-size: 16px;
-  width: 1440px;
+.catalog {
+  display: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  padding: 0;
-  margin: 0;
-  text-transform: uppercase;
+.catalog__tattoo {
+  display: none;
+}
+.catalog__freckles {
+  display: none;
+}
+.catalog__icon {
+  display: none;
+}
+.catalog__crystal {
+  display: none;
+}
+.catalog__gift {
+  display: none;
+}
+.catalog__sortorder-new {
+  display: none;
+}
+.catalog__sortorder-hits {
+  display: none;
+}
+.catalog__sortorder-sale {
+  display: none;
 }
 
-ul,
-li {
-  display: block;
-  margin: 0;
-}
-.header {
-  margin: 0 auto;
-}
-.header__conteiner {
-  width: 100%;
-}
-.header__conteiner-delivery {
-  width: 100%;
-  font-size: 12px;
-  font-weight: 700;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  letter-spacing: 0.7px;
-  background: #2c2c2c;
-  color: white;
-}
-.header__conteiner-menu {
-  display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.header__menu-logo {
-  margin-left: 80px;
-  font-size: 25px;
-  margin-right: 12%;
-  letter-spacing: 0.7px;
-  color: black;
-}
-.header__nav-row {
-  display: flex;
-  margin-top: 7px;
-}
-.header__nav-row li a {
-  text-decoration: none;
-  letter-spacing: 0.7px;
-  padding-right: 30px;
-  font-weight: 700;
-  font-size: 13px;
-  color: black;
-}
-.header__nav-row li a:hover {
-  color: #f08a14;
-}
-.header__menu-image {
-  display: flex;
-  height: 40px;
-  width: 80px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.header__image-search {
-  height: 40px;
-  width: 40px;
-  color: white;
-}
-.header__menu-language {
-  display: flex;
-  letter-spacing: 0.7px;
-  font-size: 15px;
-  font-weight: 500;
-  margin-top: 8px;
-}
-.header__language-ru {
-  margin-right: 5px;
-}
-.header__language {
-  margin-right: 5px;
-}
 /* кнопки */
-.button__conteiner {
-  display: flex;
+.catalog__button__conteiner {
+  display: none;
   margin-left: 150px;
 }
-.button__conteiner-image {
+.catalog__button__conteiner-image {
   width: 230px;
   height: 230px;
   margin-left: 5px;
 }
-.button__image {
+.catalog__button__image {
   position: absolute;
   z-index: -1;
   width: 230px;
   height: 230px;
 }
-.button__title {
+.catalog__button__title {
   color: white;
   font-size: 15px;
   font-weight: 400;
@@ -116,8 +51,9 @@ li {
   margin-top: 200px;
   margin-left: 10px;
 }
+
 /* загаловок каталога */
-.title__title {
+.catalog__title__title {
   font-size: 40px;
   font-weight: 400;
   font-family: "Circe", Arial, sans-serif;
@@ -132,7 +68,7 @@ li {
   margin-left: 30%;
   margin-bottom: 50px;
 }
-.catalog__menu-list li a {
+.catalog__menu-list li {
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 20px;
@@ -146,8 +82,9 @@ li {
   color: black;
   text-decoration: none;
 }
-.catalog__list-point:hover {
-  font-weight: 700;
+.catalog__menu-list li:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 .catalog__field__select {
   width: 17%;
@@ -235,120 +172,11 @@ li {
   border: 1px solid #1c1c1c;
   background: white;
 }
-/* футер */
-.footer__conteiner {
-  height: 400px;
-  background: #1c1c1c;
-  color: white;
-}
-.footer__conteiner-menu {
-  display: flex;
-  padding-top: 70px;
-  padding-left: 120px;
-}
-.footer__menu-row {
-  font-size: 18px;
-  font-family: "Circe", Arial, sans-serif;
-  letter-spacing: 0.7px;
-  font-weight: 400;
-  padding-left: 60px;
-}
-.footer__menu-row li a {
-  font-size: 14px;
-  font-family: "Circe", Arial, sans-serif;
-  letter-spacing: 0.7px;
-  color: white;
-  text-decoration: none;
-}
-.footer__row-title {
-  margin-bottom: 15px;
-}
-.footer__row-point {
-  margin-bottom: 15px;
-}
-.footer__menu-search {
-  width: 40%;
-  margin-left: 80px;
-}
-.footer__search-title {
-  font-size: 14px;
-  font-family: "Circe", Arial, sans-serif;
-  color: white;
-  text-decoration: none;
-  letter-spacing: 1px;
-  margin-bottom: 40px;
-}
-.footer__search-info {
-  font-size: 12px;
-  font-family: "Circe", Arial, sans-serif;
-  color: #cecece;
-  text-decoration: none;
-  letter-spacing: 1px;
-  margin-top: 15px;
-}
-.footer__input-email {
-  width: 90%;
-  height: 15%;
-  background: #1c1c1c;
-  color: #6b6b6b;
-  font-size: 15px;
-  border-bottom: 1px solid white;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  letter-spacing: 1px;
-  padding-bottom: 5px;
-}
-.footer__input-arrow {
-  position: absolute;
-  z-index: 1;
-  margin-left: -31px;
-}
-.footer__conteiner-info {
-  display: flex;
-  margin-top: 90px;
-  margin-left: 180px;
-}
-.footer__info-logo {
-  font-size: 12px;
-  font-family: "Circe", Arial, sans-serif;
-  color: white;
-  text-decoration: none;
-  letter-spacing: 1px;
-  margin-top: 15px;
-  margin-right: 120px;
-}
-.footer__info-document {
-  font-size: 12px;
-  font-family: "Circe", Arial, sans-serif;
-  color: white;
-  text-decoration: none;
-  letter-spacing: 1px;
-  margin-top: 15px;
-  margin-right: 40px;
-}
-.footer__info-social {
-  display: flex;
-  margin-right: 120px;
-}
-.footer__image {
-  width: 30px;
-  height: 30px;
-  margin-right: 20px;
-}
-.footer__info-payment {
-  margin-top: -5px;
-}
-.footer__images {
-  width: 80px;
-  height: 50px;
-  margin-right: 20px;
-}
+
 /* basket */
 .basket {
   display: none;
 }
-
 .basket__conteiner-background {
   position: fixed;
   display: block;
@@ -523,14 +351,18 @@ li {
 /* каталог тату */
 .tattoo__menu-list {
   display: flex;
-  margin-left: 10%;
+  margin-left: 15%;
   margin-bottom: 50px;
 }
-.tattoo__menu-list li a {
+.tattoo__menu-list li {
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.tattoo__menu-list li:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 .tattoo__list-point {
   font-size: 18px;
@@ -564,3 +396,5 @@ li {
 .tattoo__sortorder-250 {
   display: none;
 }
+
+/*  */
