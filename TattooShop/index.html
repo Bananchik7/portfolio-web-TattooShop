@@ -2,9 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>TattooShop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/catalog.css" />
+    <link rel="stylesheet" href="css/catalog__image.css" />
   </head>
   <body>
     <header id="header" class="header">
@@ -13,16 +21,12 @@
         <div class="header__conteiner-menu">
           <div class="header__menu-logo">Transitional Tattoos</div>
           <ul class="header__nav-row">
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">Как наносить</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li class="header__button-catalog">Каталог</li>
+            <li class="header__button-delivery">Доставка и оплата</li>
+            <li class="header__button-faq">Как наносить</li>
+            <li class="header__button-contact">Контакты</li>
           </ul>
           <div class="header__menu-image">
-            <img
-              class="header__image-search"
-              src="image/index/header__search.svg"
-            />
             <img
               class="header__image-basket"
               src="image/index/header__basket.svg"
@@ -30,8 +34,6 @@
           </div>
           <div class="header__menu-language">
             <div class="header__language-ru">RU</div>
-            <div class="header__language">/</div>
-            <div class="header__language-en">EN</div>
           </div>
         </div>
       </div>
@@ -83,7 +85,7 @@
       >
         <img
           class="catalog__button__image"
-          src="image/index/catalog__index/catalog__image-1.jpeg"
+          src="image/catalog/sertificat.png"
         />
         <div class="catalog__button__title">Подарочный сертификат</div>
       </div>
@@ -97,16 +99,12 @@
           <div class="index__header__conteiner-menu">
             <div class="index__header__menu-logo">Transitional Tattoos</div>
             <ul class="index__header__nav-row">
-              <li><a href="#">Каталог</a></li>
-              <li><a href="#">Доставка и оплата</a></li>
-              <li><a href="#">Как наносить</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li class="index__header__button-catalog">Каталог</li>
+              <li class="index__header__button-delivery">Доставка и оплата</li>
+              <li class="index__header__button-faq">Как наносить</li>
+              <li class="index__header__button-contact">Контакты</li>
             </ul>
             <div class="index__header__menu-image">
-              <img
-                class="index__header__image-search"
-                src="image/index/header__search.png"
-              />
               <img
                 class="index__header__image-basket"
                 src="image/index/header__basket.png"
@@ -114,8 +112,6 @@
             </div>
             <div class="index__header__menu-language">
               <div class="index__header__language-ru">RU</div>
-              <div class="index__header__language">/</div>
-              <div class="index__header__language-en">EN</div>
             </div>
           </div>
           <div class="index__header__conteiner-title">
@@ -155,6 +151,7 @@
               <div data-product-id="product-006" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-006"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-001"
@@ -174,6 +171,7 @@
               <div data-product-id="product-007" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-007"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-002"
@@ -195,6 +193,7 @@
               <div data-product-id="product-008" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-008"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-003"
@@ -216,6 +215,7 @@
               <div data-product-id="product-009" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-009"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-004"
@@ -374,6 +374,7 @@
               <div data-product-id="product-024" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-024"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -393,6 +394,7 @@
               <div data-product-id="product-025" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-025"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -410,6 +412,7 @@
               <div data-product-id="product-026" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-026"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -429,6 +432,7 @@
               <div data-product-id="product-027" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-027"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -852,9 +856,9 @@
                 <div data-product-id="product-001" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-001"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-freckles-001"
                         src="image/catalog/catalog__freckles/001.png"
                       />
                     </div>
@@ -873,9 +877,9 @@
                 <div data-product-id="product-002" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-002"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-freckles-002"
                         src="image/catalog/catalog__freckles/002.png"
                       />
                     </div>
@@ -894,9 +898,9 @@
                 <div data-product-id="product-003" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-003"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-freckles-003"
                         src="image/catalog/catalog__freckles/003.png"
                       />
                     </div>
@@ -915,9 +919,9 @@
                 <div data-product-id="product-004" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-004"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-freckles-004"
                         src="image/catalog/catalog__freckles/004.png"
                       />
                     </div>
@@ -936,9 +940,9 @@
                 <div data-product-id="product-005" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-005"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-freckles-005"
                         src="image/catalog/catalog__freckles/005.png"
                       />
                     </div>
@@ -957,9 +961,9 @@
                 <div data-product-id="product-006" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-006"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-001"
                         src="image/catalog/catalog__moon/001.png"
                       />
                     </div>
@@ -976,9 +980,9 @@
                 <div data-product-id="product-007" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-007"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-002"
                         src="image/catalog/catalog__linii/002.png"
                       />
                     </div>
@@ -997,9 +1001,9 @@
                 <div data-product-id="product-008" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-008"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-003"
                         src="image/catalog/catalog__linii/003.png"
                       />
                     </div>
@@ -1018,9 +1022,9 @@
                 <div data-product-id="product-009" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-009"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-004"
                         src="image/catalog/catalog__tattoo/004.png"
                       />
                     </div>
@@ -1037,9 +1041,9 @@
                 <div data-product-id="product-010" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-010"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__moon/005.png"
                       />
                     </div>
@@ -1056,9 +1060,9 @@
                 <div data-product-id="product-011" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-011"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__animals/001.jpeg"
                       />
                     </div>
@@ -1075,9 +1079,9 @@
                 <div data-product-id="product-012" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-012"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__animals/002.jpeg"
                       />
                     </div>
@@ -1094,9 +1098,9 @@
                 <div data-product-id="product-013" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-013"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__animals/003.jpeg"
                       />
                     </div>
@@ -1113,9 +1117,9 @@
                 <div data-product-id="product-014" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-014"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__animals/004.jpeg"
                       />
                     </div>
@@ -1132,9 +1136,9 @@
                 <div data-product-id="product-015" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-015"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__animals/005.jpeg"
                       />
                     </div>
@@ -1151,9 +1155,9 @@
                 <div data-product-id="product-016" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-016"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__plant/001.jpeg"
                       />
                     </div>
@@ -1171,9 +1175,9 @@
                 <div data-product-id="product-017" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-017"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__plant/002.jpeg"
                       />
                     </div>
@@ -1191,9 +1195,9 @@
                 <div data-product-id="product-018" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-018"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__plant/003.jpeg"
                       />
                     </div>
@@ -1211,9 +1215,9 @@
                 <div data-product-id="product-019" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-019"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__plant/004.jpeg"
                       />
                     </div>
@@ -1231,9 +1235,9 @@
                 <div data-product-id="product-020" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-020"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__plant/005.png"
                       />
                     </div>
@@ -1251,9 +1255,9 @@
                 <div data-product-id="product-021" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-021"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__linii/001.png"
                       />
                     </div>
@@ -1271,9 +1275,9 @@
                 <div data-product-id="product-022" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-022"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__linii/004.png"
                       />
                     </div>
@@ -1293,9 +1297,9 @@
                 <div data-product-id="product-023" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-023"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__linii/005.png"
                       />
                     </div>
@@ -1315,9 +1319,9 @@
                 <div data-product-id="product-024" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-024"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__kristal/001.png"
                       />
                     </div>
@@ -1334,6 +1338,7 @@
                 <div data-product-id="product-025" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-025"></div>
                       <img
                         class="catalog__image"
                         src="image/catalog/catalog__icon/001.jpeg"
@@ -1350,9 +1355,9 @@
                 <div data-product-id="product-026" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-026"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__plant/006.png"
                       />
                     </div>
@@ -1369,9 +1374,9 @@
                 <div data-product-id="product-027" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-027"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__animals/006.jpeg"
                       />
                     </div>
@@ -1392,9 +1397,9 @@
                 <div data-product-id="product-007" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-007"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-002"
                         src="image/catalog/catalog__linii/002.png"
                       />
                     </div>
@@ -1414,9 +1419,9 @@
                 <div data-product-id="product-008" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-008"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-003"
                         src="image/catalog/catalog__linii/003.png"
                       />
                     </div>
@@ -1436,9 +1441,9 @@
                 <div data-product-id="product-006" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-006"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-001"
                         src="image/catalog/catalog__moon/001.png"
                       />
                     </div>
@@ -1460,9 +1465,9 @@
                 <div data-product-id="product-001" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-001"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-freckles-001"
                         src="image/catalog/catalog__freckles/001.png"
                       />
                     </div>
@@ -1482,9 +1487,9 @@
                 <div data-product-id="product-002" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-002"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-freckles-002"
                         src="image/catalog/catalog__freckles/002.png"
                       />
                     </div>
@@ -1504,9 +1509,9 @@
                 <div data-product-id="product-003" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-003"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-freckles-003"
                         src="image/catalog/catalog__freckles/003.png"
                       />
                     </div>
@@ -1530,9 +1535,9 @@
                 <div data-product-id="product-024" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-024"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__kristal/001.png"
                       />
                     </div>
@@ -1549,9 +1554,9 @@
                 <div data-product-id="product-025" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-025"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__icon/001.jpeg"
                       />
                     </div>
@@ -1566,9 +1571,9 @@
                 <div data-product-id="product-026" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-026"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__plant/006.png"
                       />
                     </div>
@@ -1585,9 +1590,9 @@
                 <div data-product-id="product-027" class="catalog__row-product">
                   <div class="catalog__product-info">
                     <div class="catalog__product-image">
+                      <div class="catalog__image-active" id="image-027"></div>
                       <img
                         class="catalog__image"
-                        id="catalog__image-tattoo-005"
                         src="image/catalog/catalog__animals/006.jpeg"
                       />
                     </div>
@@ -1629,6 +1634,7 @@
               <div data-product-id="product-006" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-006"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-001"
@@ -1649,6 +1655,7 @@
               <div data-product-id="product-007" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-007"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-002"
@@ -1671,6 +1678,7 @@
               <div data-product-id="product-008" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-008"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-003"
@@ -1693,6 +1701,7 @@
               <div data-product-id="product-009" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-009"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-004"
@@ -1713,6 +1722,7 @@
               <div data-product-id="product-010" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-010"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -1733,6 +1743,7 @@
               <div data-product-id="product-011" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-011"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -1753,6 +1764,7 @@
               <div data-product-id="product-012" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-012"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -1773,6 +1785,7 @@
               <div data-product-id="product-013" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-013"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -1793,6 +1806,7 @@
               <div data-product-id="product-014" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-014"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -1813,6 +1827,7 @@
               <div data-product-id="product-015" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-015"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -1833,6 +1848,7 @@
               <div data-product-id="product-016" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-016"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -1853,6 +1869,7 @@
               <div data-product-id="product-017" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-017"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -1873,6 +1890,7 @@
               <div data-product-id="product-018" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-018"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -1893,6 +1911,7 @@
               <div data-product-id="product-019" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-019"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -1913,6 +1932,7 @@
               <div data-product-id="product-020" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-020"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -1933,6 +1953,7 @@
               <div data-product-id="product-021" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-021"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -1953,6 +1974,7 @@
               <div data-product-id="product-022" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-022"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -1975,6 +1997,7 @@
               <div data-product-id="product-023" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-023"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -1997,6 +2020,7 @@
               <div data-product-id="product-026" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-026"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -2016,6 +2040,7 @@
               <div data-product-id="product-027" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-027"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -2039,6 +2064,7 @@
               <div data-product-id="product-011" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-011"></div>
                     <img
                       class="catalog__image"
                       id="catalog__image-tattoo-005"
@@ -2059,9 +2085,9 @@
               <div data-product-id="product-012" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-012"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-005"
                       src="image/catalog/catalog__animals/002.jpeg"
                     />
                   </div>
@@ -2079,9 +2105,9 @@
               <div data-product-id="product-013" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-013"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-005"
                       src="image/catalog/catalog__animals/003.jpeg"
                     />
                   </div>
@@ -2099,9 +2125,9 @@
               <div data-product-id="product-014" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-0014"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-005"
                       src="image/catalog/catalog__animals/004.jpeg"
                     />
                   </div>
@@ -2119,9 +2145,9 @@
               <div data-product-id="product-015" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-015"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-005"
                       src="image/catalog/catalog__animals/005.jpeg"
                     />
                   </div>
@@ -2139,9 +2165,9 @@
               <div data-product-id="product-027" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-027"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-005"
                       src="image/catalog/catalog__animals/006.jpeg"
                     />
                   </div>
@@ -2162,9 +2188,9 @@
               <div data-product-id="product-016" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-016"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-005"
                       src="image/catalog/catalog__plant/001.jpeg"
                     />
                   </div>
@@ -2182,9 +2208,9 @@
               <div data-product-id="product-017" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-017"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-005"
                       src="image/catalog/catalog__plant/002.jpeg"
                     />
                   </div>
@@ -2202,9 +2228,9 @@
               <div data-product-id="product-018" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-018"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-005"
                       src="image/catalog/catalog__plant/003.jpeg"
                     />
                   </div>
@@ -2222,9 +2248,9 @@
               <div data-product-id="product-019" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-019"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-005"
                       src="image/catalog/catalog__plant/004.jpeg"
                     />
                   </div>
@@ -2242,9 +2268,9 @@
               <div data-product-id="product-020" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-020"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-005"
                       src="image/catalog/catalog__plant/005.png"
                     />
                   </div>
@@ -2262,9 +2288,9 @@
               <div data-product-id="product-026" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-026"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-005"
                       src="image/catalog/catalog__plant/006.png"
                     />
                   </div>
@@ -2285,9 +2311,9 @@
               <div data-product-id="product-007" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-007"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-002"
                       src="image/catalog/catalog__linii/002.png"
                     />
                   </div>
@@ -2307,9 +2333,9 @@
               <div data-product-id="product-008" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-008"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-003"
                       src="image/catalog/catalog__linii/003.png"
                     />
                   </div>
@@ -2329,9 +2355,9 @@
               <div data-product-id="product-021" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-021"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-005"
                       src="image/catalog/catalog__linii/001.png"
                     />
                   </div>
@@ -2349,9 +2375,9 @@
               <div data-product-id="product-022" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-022"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-005"
                       src="image/catalog/catalog__linii/004.png"
                     />
                   </div>
@@ -2371,9 +2397,9 @@
               <div data-product-id="product-023" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-023"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-005"
                       src="image/catalog/catalog__linii/005.png"
                     />
                   </div>
@@ -2397,9 +2423,9 @@
               <div data-product-id="product-006" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-006"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-001"
                       src="image/catalog/catalog__moon/001.png"
                     />
                   </div>
@@ -2417,9 +2443,9 @@
               <div data-product-id="product-010" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-010"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-005"
                       src="image/catalog/catalog__moon/005.png"
                     />
                   </div>
@@ -2437,9 +2463,9 @@
               <div data-product-id="product-007" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-007"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-002"
                       src="image/catalog/catalog__linii/002.png"
                     />
                   </div>
@@ -2459,9 +2485,9 @@
               <div data-product-id="product-008" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-008"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-003"
                       src="image/catalog/catalog__linii/003.png"
                     />
                   </div>
@@ -2485,9 +2511,9 @@
               <div data-product-id="product-007" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-007"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-002"
                       src="image/catalog/catalog__linii/002.png"
                     />
                   </div>
@@ -2507,9 +2533,9 @@
               <div data-product-id="product-008" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-008"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-003"
                       src="image/catalog/catalog__linii/003.png"
                     />
                   </div>
@@ -2529,9 +2555,9 @@
               <div data-product-id="product-009" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-009"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-004"
                       src="image/catalog/catalog__tattoo/004.png"
                     />
                   </div>
@@ -2549,9 +2575,9 @@
               <div data-product-id="product-020" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-020"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-005"
                       src="image/catalog/catalog__plant/005.png"
                     />
                   </div>
@@ -2573,9 +2599,9 @@
               <div data-product-id="product-016" class="catalog__row-product">
                 <div class="catalog__product-info">
                   <div class="catalog__product-image">
+                    <div class="catalog__image-active" id="image-016"></div>
                     <img
                       class="catalog__image"
-                      id="catalog__image-tattoo-005"
                       src="image/catalog/catalog__plant/001.jpeg"
                     />
                   </div>
@@ -2605,9 +2631,9 @@
             <div data-product-id="product-001" class="catalog__row-product">
               <div class="catalog__product-info">
                 <div class="catalog__product-image">
+                  <div class="catalog__image-active" id="image-001"></div>
                   <img
                     class="catalog__image"
-                    id="catalog__image-freckles-001"
                     src="image/catalog/catalog__freckles/001.png"
                   />
                 </div>
@@ -2625,6 +2651,7 @@
             <div data-product-id="product-002" class="catalog__row-product">
               <div class="catalog__product-info">
                 <div class="catalog__product-image">
+                  <div class="catalog__image-active" id="image-002"></div>
                   <img
                     class="catalog__image"
                     id="catalog__image-freckles-002"
@@ -2645,6 +2672,7 @@
             <div data-product-id="product-003" class="catalog__row-product">
               <div class="catalog__product-info">
                 <div class="catalog__product-image">
+                  <div class="catalog__image-active" id="image-003"></div>
                   <img
                     class="catalog__image"
                     id="catalog__image-freckles-003"
@@ -2665,6 +2693,7 @@
             <div data-product-id="product-004" class="catalog__row-product">
               <div class="catalog__product-info">
                 <div class="catalog__product-image">
+                  <div class="catalog__image-active" id="image-004"></div>
                   <img
                     class="catalog__image"
                     id="catalog__image-freckles-004"
@@ -2685,6 +2714,7 @@
             <div data-product-id="product-005" class="catalog__row-product">
               <div class="catalog__product-info">
                 <div class="catalog__product-image">
+                  <div class="catalog__image-active" id="image-005"></div>
                   <img
                     class="catalog__image"
                     id="catalog__image-freckles-005"
@@ -2716,6 +2746,7 @@
             <div data-product-id="product-025" class="catalog__row-product">
               <div class="catalog__product-info">
                 <div class="catalog__product-image">
+                  <div class="catalog__image-active" id="image-025"></div>
                   <img
                     class="catalog__image"
                     src="image/catalog/catalog__icon/001.jpeg"
@@ -2742,6 +2773,7 @@
           <div data-product-id="product-024" class="catalog__row-product">
             <div class="catalog__product-info">
               <div class="catalog__product-image">
+                <div class="catalog__image-active" id="image-024"></div>
                 <img
                   class="catalog__image"
                   id="catalog__image-tattoo-005"
@@ -2766,18 +2798,21 @@
       <div class="catalog__conteiner-sortorder">
         <div class="catalog__sortorder-all">
           <div class="catalog__row">
-            <div data-product-id="product-025" class="catalog__row-product">
+            <div data-product-id="product-028" class="catalog__row-product">
               <div class="catalog__product-info">
                 <div class="catalog__product-image">
+                  <div class="catalog__image-active" id="image-028"></div>
                   <img
                     class="catalog__image"
-                    src="image/catalog/catalog__icon/001.jpeg"
+                    src="image/catalog/sertificat.png"
                   />
                 </div>
-                <div class="catalog__product-title">Lovocado</div>
-                <div class="catalog__product-details">Значок</div>
+                <div class="catalog__product-title">
+                  Электронный подарочный сертификат
+                </div>
+                <div class="catalog__product-details"></div>
                 <div class="catalog__product-price">
-                  <div class="catalog__price-number">799 RUB</div>
+                  <div class="catalog__price-number">1000 RUB</div>
                 </div>
               </div>
               <button class="catalog__product-button">в корзину</button>
@@ -2786,6 +2821,336 @@
         </div>
       </div>
     </div>
+    <section class="delivery">
+      <div id="delivery__title" class="title">
+        <div class="delivery__title__title">Доставка и оплата</div>
+      </div>
+      <div class="delivery__conteiner">
+        <div class="delivery__menu">
+          <ul class="delivery__menu-row">
+            <li class="delivery__row-info">ОБЩАЯ ИНФОРМАЦИЯ</li>
+            <li class="delivery__row-pochta">ПОЧТОЙ РОССИИ</li>
+            <li class="delivery__row-courier">ДОСТАВКА КУРЬЕРОМ</li>
+            <li class="delivery__row-international">МЕЖДУНАРОДНАЯ ДОСТАВКА</li>
+            <li class="delivery__row-return">ОБМЕН И ВОЗВРАТ</li>
+            <li class="delivery__row-pay">ОПЛАТА</li>
+          </ul>
+        </div>
+        <div class="delivery__info">
+          <div class="delivery__info-details">
+            <p>
+              После оформления заказа на ваш e-mail придет электронный чек,
+              письмо с подтверждением заказа, где будет указан номер для
+              отслеживания (кроме международных отправок). Для заказов с
+              международной отправкой мы отправим трек номер отдельно, после
+              отправки заказа. А также вам придет письмо с предложением
+              подписаться на рассылку, они у нас редкие и по делу:)
+            </p>
+            <p>
+              На формирование отправок «Почтой России» нам потребуется 1-3
+              рабочих дня; курьерские заказы мы отправляем в этот же рабочий
+              день, или на следующий рабочий день.
+            </p>
+          </div>
+          <div class="delivery__info-pochta">
+            <p>
+              Стоимость доставки рассчитывается на этапе оформления заказа, в
+              зависимости от вашего адреса.
+            </p>
+            <p>Средние сроки доставки:</p>
+            <ul>
+              <li>Санкт-Петербург: 2-4 дня.</li>
+              <li>Москва: 3-5 дней.</li>
+              <li>Регионы России: 5-10 дней.</li>
+            </ul>
+            <p>
+              Более подробно со сроками доставки вы можете ознакомиться на
+              официальном сайте «Почты России».
+            </p>
+            <p>Детали:</p>
+            <ul>
+              <li>
+                Пожалуйста, указывайте полный адрес доставки с индексом, ФИО и
+                номер телефона.
+              </li>
+              <li>
+                Трек номер находится в письме с подтверждением заказа, которое
+                вы получаете в момент оформления заказа.
+              </li>
+              <li>
+                Мы отправляем заказы ускоренным способом с получением в
+                ближайшем к вам почтовом отделении.
+              </li>
+              <li>
+                С момента получения заказа нам понадобится 1-3 рабочих дня на
+                сборку заказа.
+              </li>
+              <li>
+                Если у вас установлено приложение «Почты России», вы получите
+                смс-уведомление от «Почты России». И на смартфоне процесс
+                отслеживания посылки будет еще удобнее.
+              </li>
+              <li>
+                По умолчанию мы не доставляем заказы в почтовый ящик, чтобы
+                заказ не потерялся. Если вам нужен именно такой способ доставки,
+                пожалуйста, напишите нам об этом в комментарии к заказу. При
+                таком способе доставки «Почта России» не предоставляет
+                трек-номер, поэтому мы не несём ответственность, если заказ
+                будет утерян.
+              </li>
+              <li>
+                В случае, если вы не забрали заказ в почтовом отделении в
+                течение месяца после прибытия посылки, заказ будет возвращён
+                нам, и повторная доставка, а также стоимость оплаты возврата
+                будет оплачиваться дополнительно.
+              </li>
+            </ul>
+          </div>
+          <div class="delivery__info-courier">
+            <ul>
+              <li>
+                Заказ будет доставлен по указанному адресу. Курьер свяжется с
+                вами в день доставки.
+              </li>
+              <li>
+                Заказы, полученные по будним дням до 14:00 будут переданы
+                курьерской службе в этот же день. Если заказ получен после
+                14:00, он будет передан курьерской службе на следующий рабочий
+                день.
+              </li>
+              <li>
+                Как только заказ будет передан курьерской службе, мы отправим
+                вам уведомление на электронную почту.
+              </li>
+              <li>Отправка и доставка в выходные дни не осуществляется.</li>
+              <li>
+                Если отправка в ваш регион не осуществляется курьерской службой,
+                или стоимость доставки выше озвученной, мы свяжемся с вами,
+                чтобы обсудить детали.
+              </li>
+            </ul>
+            <h1><br />САНКТ-ПЕТЕРБУРГ</h1>
+            <p>Сроки доставки:</p>
+            <ul>
+              <li>1-3 рабочих дня (350 рублей).</li>
+              <li>
+                Cрочная доставка: на следующий рабочий день при заказе до 14:00
+                по будним дням (400 рублей).
+              </li>
+            </ul>
+            <h1><br />МОСКВА</h1>
+            <p>Сроки доставки:</p>
+            <ul>
+              <li>Стандартная доставка: 1-3 рабочих дня (380 рублей).</li>
+              <li>
+                Срочная доставка: на следующий рабочий день при заказе до 14:00
+                по будним дням (480 рублей).
+              </li>
+              <li>Московская область, регионы России (550 рублей).</li>
+            </ul>
+            <h1><br />РЕГИОНЫ РОССИИ</h1>
+            <p>Сроки рассчитываются индивидуально (от 550 рублей).</p>
+          </div>
+          <div class="delivery__info-international">
+            <p>
+              Международные заказы мы отправляем Почтой России. Стандартные
+              сроки доставки 1-4 недели.
+            </p>
+            <p>
+              По ссылке представлен список стран, в которые временно не
+              осуществляется доставка. Список стран может быть изменен. Мы
+              надеемся на скорое улучшение ситуации.
+            </p>
+            <p>
+              Для заказов с международной отправкой мы отправим трек номер
+              отдельно, после отправки заказа.
+            </p>
+            <p>
+              Ссылка для отслеживания международных заказов:
+              https://parcelsapp.com/en/tracking/. Вы также можете отслеживать
+              на сайте местной почты.
+            </p>
+            <p>! Пожалуйста, указывайте подробный адрес с индексом.</p>
+          </div>
+          <div class="delivery__info-return">
+            <p>
+              Возврат возможен в течение семи дней после получения товара (в
+              соответствии с правилами продажи товаров дистанционным способом).
+              Пожалуйста, заранее напишите нам на почту support@unicornsout.ru о
+              своем намерении вернуть или обменять товар (с указанием номера
+              заказа, а также позиций для обмена).
+            </p>
+            <p>
+              После получения нами товара и проверки его товарного вида, будет
+              произведен возврат или обмен. При возврате денежные средства
+              вернутся способом, который вы выбрали при оплате.
+            </p>
+            <p>
+              При возврате и обмене доставка осуществляется за счет клиента.
+            </p>
+            <p>
+              В случае, если вы не забрали заказ в почтовом отделении в течение
+              месяца после прибытия посылки, заказ будет возвращён нам, и
+              повторная доставка, а также стоимость оплаты возврата будет
+              оплачиваться дополнительно.
+            </p>
+          </div>
+          <div class="delivery__info-pay">
+            <p>
+              На нашем сайте вы можете оплатить заказ через Юкассу с помощью
+              банковской карты платежных систем (Visa, Mastercard, Maestro,
+              Мир), оформленными в России или через Яндекс деньги.
+            </p>
+            <p>
+              К сожалению, у нас временно нет возможности принимать оплату
+              картами, оформленными в других странах. Но вы можете оформить
+              заказ на unicornsout.com, на этом сайте есть возможность оплаты
+              через PayPal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq">
+      <div id="faq__title" class="title">
+        <div class="faq__title__title">FAQ</div>
+      </div>
+      <div class="faq__conteiner">
+        <div class="faq__conteiner-row">
+          <div class="faq__row-question">
+            Сколько держатся переводные татуировки?
+          </div>
+          <div class="faq__row-details">
+            Татуировки держатся от 2 до 10 дней в зависимости от места нанесения
+            и типа кожи. В среднем 5 дней. <br />
+            <br />
+
+            Веснушки держатся в среднем 1-3 дня. Если наносить их на макияж, то
+            они сотрутся вместе со снятием макияжа. На чистой коже продержатся
+            2-3 дня.
+            <br />
+            <br />
+            Татуировки воды не боятся, их можно мочить. Главное не тереть
+            мочалкой— тату стираются от механического повреждения и от жирных
+            текстур (крем, масло и тд).
+          </div>
+        </div>
+        <div class="faq__conteiner-row">
+          <div class="faq__row-question">Как наносить тату?</div>
+          <div class="faq__row-details">
+            Переводная татуировка наносится быстро и просто:
+            <br />
+            <br />
+            1. Татуировку можно наносить как на чистую кожу, так и поверх
+            макияжа. <br />2. Удалите прозрачную пленку на лицевой стороне.
+            <br />3. Приложите татуировку рисунком вниз, и откорректируйте
+            положение с помощью картинки на обратной стороне. <br />4. Тщательно
+            намочите бумажную подложку, используя воду и бумажное полотенце.
+            Прижмите на несколько секунд и тщательно прогладьте подложку.
+            <br />5. Снимите подложку и дайте татуировке высохнуть.
+            <br />
+            <br />
+            Переводную татуировку легко удалить средством для снятия
+            водостойкого макияжа, детским / оливковым маслом, либо скотчем.
+            <br />
+            <br />
+            Если вы захотите ознакомиться с инструкцией непосредственно перед
+            нанесением татуировки — подробная инструкция есть на обороте
+            татуировки.
+          </div>
+        </div>
+        <div class="faq__conteiner-row">
+          <div class="faq__row-question">
+            На какие места лучше всего наносить тату, чтобы они лучше держались?
+          </div>
+          <div class="faq__row-details">
+            Нет мест, на которые "можно" или "нельзя" сделать переводную
+            татуировку. Но есть рекомендуемые места, чтобы вы носили татуировку
+            как можно дольше. Избегайте нанесения татуировки на сгибы рук, ног,
+            на места, где татуировка может подвергнуться механическому
+            воздействию — от ремешков часов, бретелек, ручек сумки или рюкзака.
+            На шее, лице, кистях рук татуировка продержится довольно не долго.
+            <br />
+            <br />
+            На лице татуировка обычно держится до снятия макияжа. Если нанесена
+            на чистую кожу, то продержится 1-3 дня.
+          </div>
+        </div>
+        <div class="faq__conteiner-row">
+          <div class="faq__row-question">
+            Есть ли рекомендации по уходу за переводной татуировкой?
+          </div>
+          <div class="faq__row-details">
+            Татуировки воды не боятся, их можно мочить. Главное не тереть
+            мочалкой— тату стираются от механического повреждения и от жирных
+            текстур (крем, масло и тд).
+            <br />
+            <br />
+            Вы часто спрашиваете, можно ли наносить тату и веснушки на макияж
+            —можно, получится классный образ :)
+          </div>
+        </div>
+        <div class="faq__conteiner-row">
+          <div class="faq__row-question">Как удалить тату?</div>
+          <div class="faq__row-details">
+            Переводную татуировку легко удалить средством для снятия
+            водостойкого макияжа, детским / оливковым маслом, либо скотчем.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="contact__info">
+        <div class="contact__title__title">Контакты</div>
+        <div class="contact__info-details">
+          Если у вас возникли вопросы по поводу заказа, пишите нам на почту
+          support@unicornsout.com, мы обязательно поможем разобраться.
+          <br />
+          <br />
+          А если вы хотите татуировки с индивидуальным дизайном или сделать
+          оптовый заказ — пожалуйста, заполните форму в разделе «Для бизнеса», и
+          мы обязательно свяжемся с вами.
+        </div>
+      </div>
+      <div class="contact__form">
+        <div class="contact__title__title">Написать нам</div>
+        <div class="contact__form-details">
+          <div class="contact__details-input">
+            <div class="contact__input-text">Ваш emeil</div>
+            <input
+              class="contact__input-input"
+              type="text"
+              placeholder="email@email.com"
+            />
+          </div>
+          <div class="contact__details-input">
+            <div class="contact__input-text">Ваша фамилия и имя</div>
+            <input
+              class="contact__input-input"
+              type="text"
+              placeholder="Иванов Иван"
+            />
+          </div>
+          <div class="contact__details-input">
+            <div class="contact__input-text">Ваш телефон</div>
+            <input
+              class="contact__input-input"
+              type="text"
+              placeholder="+7 000 000 00 00"
+            />
+          </div>
+          <div class="contact__details-input">
+            <div class="contact__input-text">Cообщение</div>
+            <input type="text" class="contact__input-input-sms" />
+          </div>
+          <button class="contact__details-button">ОТПРАВИТЬ</button>
+          <div class="contact__details-text">
+            Нажимая на кнопку, вы даете согласие на обработку персональных
+            данных и соглашаетесь с политикой конфиденциальности.
+          </div>
+        </div>
+      </div>
+    </section>
     <footer id="footer" class="footer">
       <div class="footer__conteiner">
         <div class="footer__conteiner-menu">
@@ -2911,7 +3276,8 @@
           </div>
           <div class="basket__conteiner-summ">
             <div class="basket__summ-total">Итого:</div>
-            <div class="basket__summ-number"></div>
+            <div class="basket__summ-number">0</div>
+            <div class="basket__summ-text">RUB</div>
           </div>
           <div class="basket__conteiner-bitton">
             <button class="basket__button-shop">Оформить заказ</button>
@@ -2929,4 +3295,20 @@
   <script src="js/index_style.js?v=1"></script>
   <script src="js/catalog_basket.js?v=1"></script>
   <script src="js/catalog.js?v=1"></script>
+  <script src="js/image.js?v=1"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"
+  ></script>
 </html>

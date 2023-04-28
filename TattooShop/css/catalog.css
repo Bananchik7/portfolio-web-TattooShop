@@ -122,7 +122,11 @@
   margin-bottom: 90px;
 }
 .catalog__image {
-  width: 100%;
+  display: none;
+}
+.catalog__product-image {
+  width: 250px;
+  height: 250px;
 }
 .catalog__product-title {
   margin-top: 15px;
@@ -171,6 +175,11 @@
   font-family: "Circe";
   border: 1px solid #1c1c1c;
   background: white;
+}
+.catalog__product-button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition-duration: 0.5s;
 }
 
 /* basket */
@@ -330,7 +339,7 @@
 
 .basket__conteiner-summ {
   display: flex;
-  margin-left: 70%;
+  margin-left: 60%;
   margin-top: 5%;
 }
 .basket__summ-total {
@@ -340,6 +349,14 @@
   font-family: "Circe", Arial, sans-serif;
 }
 .basket__summ-number {
+  font-size: 20px;
+  letter-spacing: 0.7px;
+  font-weight: 400;
+  font-family: "Circe", Arial, sans-serif;
+  margin-left: 3%;
+  margin-top: 2px;
+}
+.basket__summ-text {
   font-size: 20px;
   letter-spacing: 0.7px;
   font-weight: 400;
@@ -396,5 +413,3 @@
 .tattoo__sortorder-250 {
   display: none;
 }
-
-/*  */

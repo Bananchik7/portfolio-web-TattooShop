@@ -3,6 +3,9 @@
 let index = document.querySelector(".index");
 let catalog = document.querySelector(".catalog");
 let header = document.querySelector(".header");
+let delivery = document.querySelector(".delivery");
+let faq = document.querySelector(".faq");
+let contact = document.querySelector(".contact");
 
 // переход в общий каталог
 let index__header__scroll_text = document.querySelector(
@@ -150,4 +153,179 @@ index__sale__title_catalog.addEventListener("click", function () {
   catalog__sortorder_new.style.display = "none";
   catalog__sortorder_hits.style.display = "none";
   catalog__sortorder_sale.style.display = "block";
+  catalog__tattoo.style.display = "none";
+  catalog__freckles.style.display = "none";
+  catalog__gift.style.display = "none";
+  catalog__icon.style.display = "none";
+  catalog__crystal.style.display = "none";
+});
+
+// переход в отдел доставка и оплата
+let header__button_delivery = document.querySelector(
+  ".header__button-delivery"
+);
+let index__header__button_delivery = document.querySelector(
+  ".index__header__button-delivery"
+);
+header__button_delivery.addEventListener("click", function () {
+  index.style.display = "none";
+  catalog.style.display = "none";
+  header.style.display = "block";
+  delivery.style.display = "block";
+  faq.style.display = "none";
+  contact.style.display = "none";
+  catalog__tattoo.style.display = "none";
+  catalog__freckles.style.display = "none";
+  catalog__gift.style.display = "none";
+  catalog__icon.style.display = "none";
+  catalog__crystal.style.display = "none";
+  catalog__button__conteiner.style.display = "none";
+});
+index__header__button_delivery.addEventListener("click", function () {
+  index.style.display = "none";
+  catalog.style.display = "none";
+  header.style.display = "block";
+  delivery.style.display = "block";
+  faq.style.display = "none";
+  contact.style.display = "none";
+  catalog__tattoo.style.display = "none";
+  catalog__freckles.style.display = "none";
+  catalog__gift.style.display = "none";
+  catalog__icon.style.display = "none";
+  catalog__crystal.style.display = "none";
+  catalog__button__conteiner.style.display = "none";
+});
+
+// переход в "как наносить"
+let header__button_faq = document.querySelector(".header__button-faq");
+let index__header__button_faq = document.querySelector(
+  ".index__header__button-faq"
+);
+
+header__button_faq.addEventListener("click", function () {
+  index.style.display = "none";
+  catalog.style.display = "none";
+  header.style.display = "block";
+  delivery.style.display = "none";
+  faq.style.display = "block";
+  contact.style.display = "none";
+  catalog__tattoo.style.display = "none";
+  catalog__freckles.style.display = "none";
+  catalog__gift.style.display = "none";
+  catalog__icon.style.display = "none";
+  catalog__crystal.style.display = "none";
+  catalog__button__conteiner.style.display = "none";
+});
+index__header__button_faq.addEventListener("click", function () {
+  index.style.display = "none";
+  catalog.style.display = "none";
+  header.style.display = "block";
+  delivery.style.display = "none";
+  faq.style.display = "block";
+  contact.style.display = "none";
+  catalog__tattoo.style.display = "none";
+  catalog__freckles.style.display = "none";
+  catalog__gift.style.display = "none";
+  catalog__icon.style.display = "none";
+  catalog__crystal.style.display = "none";
+  catalog__button__conteiner.style.display = "none";
+});
+
+// переход в контакты
+let header__button_contact = document.querySelector(".header__button-contact");
+let index__header__button_contact = document.querySelector(
+  ".index__header__button-contact"
+);
+
+header__button_contact.addEventListener("click", function () {
+  index.style.display = "none";
+  catalog.style.display = "none";
+  header.style.display = "block";
+  delivery.style.display = "none";
+  faq.style.display = "none";
+  contact.style.display = "block";
+  catalog__tattoo.style.display = "none";
+  catalog__freckles.style.display = "none";
+  catalog__gift.style.display = "none";
+  catalog__icon.style.display = "none";
+  catalog__crystal.style.display = "none";
+  catalog__button__conteiner.style.display = "none";
+});
+index__header__button_contact.addEventListener("click", function () {
+  index.style.display = "none";
+  catalog.style.display = "none";
+  header.style.display = "block";
+  delivery.style.display = "none";
+  faq.style.display = "none";
+  contact.style.display = "block";
+  catalog__tattoo.style.display = "none";
+  catalog__freckles.style.display = "none";
+  catalog__gift.style.display = "none";
+  catalog__icon.style.display = "none";
+  catalog__crystal.style.display = "none";
+  catalog__button__conteiner.style.display = "none";
+});
+
+// переход в главное меню
+let header__menu_logo = document.querySelector(".header__menu-logo");
+let index__header__menu_logo = document.querySelector(
+  ".index__header__menu-logo"
+);
+
+header__menu_logo.addEventListener("click", function () {
+  index.style.display = "block";
+  catalog.style.display = "none";
+  header.style.display = "none";
+  delivery.style.display = "none";
+  faq.style.display = "none";
+  contact.style.display = "none";
+  catalog__tattoo.style.display = "none";
+  catalog__freckles.style.display = "none";
+  catalog__gift.style.display = "none";
+  catalog__icon.style.display = "none";
+  catalog__crystal.style.display = "none";
+  catalog__button__conteiner.style.display = "none";
+});
+index__header__menu_logo.addEventListener("click", function () {
+  index.style.display = "block";
+  catalog.style.display = "none";
+  header.style.display = "none";
+  delivery.style.display = "none";
+  faq.style.display = "none";
+  contact.style.display = "none";
+  catalog__tattoo.style.display = "none";
+  catalog__freckles.style.display = "none";
+  catalog__gift.style.display = "none";
+  catalog__icon.style.display = "none";
+  catalog__crystal.style.display = "none";
+  catalog__button__conteiner.style.display = "none";
+});
+
+//
+let header__button_catalog = document.querySelector(".header__button-catalog");
+let index__header__button_catalog = document.querySelector(
+  ".index__header__button-catalog"
+);
+
+header__button_catalog.addEventListener("click", function () {
+  index.style.display = "none";
+  catalog.style.display = "block";
+  header.style.display = "block";
+  catalog__tattoo.style.display = "none";
+  catalog__freckles.style.display = "none";
+  catalog__gift.style.display = "none";
+  catalog__icon.style.display = "none";
+  catalog__crystal.style.display = "none";
+  catalog__button__conteiner.style.display = "flex";
+});
+index__header__button_catalog.addEventListener("click", function () {
+  index.style.display = "none";
+  catalog.style.display = "block";
+  header.style.display = "block";
+  catalog__tattoo.style.display = "none";
+  catalog__freckles.style.display = "none";
+  catalog__gift.style.display = "none";
+  catalog__icon.style.display = "none";
+  catalog__crystal.style.display = "none";
+  catalog__button__conteiner.style.display = "flex";
 });
