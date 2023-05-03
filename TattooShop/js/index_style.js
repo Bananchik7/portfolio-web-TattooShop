@@ -317,15 +317,133 @@ header__button_catalog.addEventListener("click", function () {
   catalog__icon.style.display = "none";
   catalog__crystal.style.display = "none";
   catalog__button__conteiner.style.display = "flex";
+  delivery.style.display = "none";
+  faq.style.display = "none";
+  contact.style.display = "none";
 });
 index__header__button_catalog.addEventListener("click", function () {
   index.style.display = "none";
   catalog.style.display = "block";
   header.style.display = "block";
+  delivery.style.display = "none";
+  faq.style.display = "none";
+  contact.style.display = "none";
   catalog__tattoo.style.display = "none";
   catalog__freckles.style.display = "none";
   catalog__gift.style.display = "none";
   catalog__icon.style.display = "none";
   catalog__crystal.style.display = "none";
   catalog__button__conteiner.style.display = "flex";
+});
+
+// footer
+let footer__row_point_catalog = document.querySelector(
+  "#footer__row-point-catalog"
+);
+let footer__row_point_contact = document.querySelector(
+  "#footer__row-point-contact"
+);
+let footer__row_point_gift = document.querySelector("#footer__row-point-gift");
+let footer__row_point_delivery = document.querySelector(
+  "#footer__row-point-delivery"
+);
+let footer__row_point_faq = document.querySelector("#footer__row-point-faq");
+
+footer__row_point_catalog.addEventListener("click", function () {
+  index.style.display = "none";
+  header.style.display = "block";
+  delivery.style.display = "none";
+  faq.style.display = "none";
+  catalog__button__conteiner.style.display = "flex";
+  catalog.style.display = "block";
+  catalog__sortorder_all.style.display = "block";
+  catalog__sortorder_new.style.display = "none";
+  catalog__sortorder_hits.style.display = "none";
+  catalog__sortorder_sale.style.display = "none";
+  catalog__tattoo.style.display = "none";
+  catalog__freckles.style.display = "none";
+  catalog__gift.style.display = "none";
+  catalog__icon.style.display = "none";
+  catalog__crystal.style.display = "none";
+});
+footer__row_point_contact.addEventListener("click", function () {
+  index.style.display = "none";
+  catalog.style.display = "none";
+  header.style.display = "block";
+  delivery.style.display = "none";
+  faq.style.display = "none";
+  contact.style.display = "block";
+  catalog__tattoo.style.display = "none";
+  catalog__freckles.style.display = "none";
+  catalog__gift.style.display = "none";
+  catalog__icon.style.display = "none";
+  catalog__crystal.style.display = "none";
+  catalog__button__conteiner.style.display = "none";
+});
+footer__row_point_delivery.addEventListener("click", function () {
+  index.style.display = "none";
+  catalog.style.display = "none";
+  header.style.display = "block";
+  delivery.style.display = "block";
+  faq.style.display = "none";
+  contact.style.display = "none";
+  catalog__tattoo.style.display = "none";
+  catalog__freckles.style.display = "none";
+  catalog__gift.style.display = "none";
+  catalog__icon.style.display = "none";
+  catalog__crystal.style.display = "none";
+  catalog__button__conteiner.style.display = "none";
+});
+footer__row_point_faq.addEventListener("click", function () {
+  index.style.display = "none";
+  catalog.style.display = "none";
+  header.style.display = "block";
+  delivery.style.display = "none";
+  faq.style.display = "block";
+  contact.style.display = "none";
+  catalog__tattoo.style.display = "none";
+  catalog__freckles.style.display = "none";
+  catalog__gift.style.display = "none";
+  catalog__icon.style.display = "none";
+  catalog__crystal.style.display = "none";
+  catalog__button__conteiner.style.display = "none";
+});
+footer__row_point_gift.addEventListener("click", function () {
+  catalog.style.display = "none";
+  catalog__freckles.style.display = "none";
+  catalog__tattoo.style.display = "none";
+  catalog__icon.style.display = "none";
+  catalog__crystal.style.display = "none";
+  catalog__gift.style.display = "block";
+  index.style.display = "none";
+  catalog.style.display = "none";
+  header.style.display = "block";
+  delivery.style.display = "none";
+  faq.style.display = "none";
+  contact.style.display = "none";
+  catalog__button__conteiner.style.display = "flex";
+});
+
+//
+let otzivy = document.querySelector(".otzivy");
+let index__reviews__conteiner_button = document.querySelector(
+  ".index__reviews__conteiner-button"
+);
+let otzivy__title_exit = document.querySelector(".otzivy__title-exit");
+
+index__reviews__conteiner_button.addEventListener("click", function () {
+  otzivy.style.display = "block";
+  document.body.style.overflow = "hidden";
+  document.querySelector(".otzivy__conteiner-background").style.overflow =
+    "auto";
+});
+otzivy__title_exit.addEventListener("click", function () {
+  otzivy.style.display = "none";
+  document.body.style.overflow = "visible";
+});
+
+let otzivy__button = document.querySelector(".otzivy__button");
+otzivy__button.addEventListener("click", function () {
+  otzivy.style.display = "none";
+  document.body.style.overflow = "visible";
 });

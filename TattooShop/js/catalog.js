@@ -276,3 +276,16 @@ delivery__row_pay.addEventListener("click", function () {
   delivery__info_return.style.display = "none";
   delivery__info_pay.style.display = "block";
 });
+
+//
+let contact__details_button = document.querySelector(
+  ".contact__details-button"
+);
+let contact__input_input = document.querySelectorAll(".contact__details-input");
+let contact__input_input_sms = document.querySelector(
+  ".contact__input-input-sms"
+);
+contact__details_button.addEventListener("click", function () {
+  contact__input_input.textContent = "";
+  contact__input_input_sms.textContent = "";
+});

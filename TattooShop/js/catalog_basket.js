@@ -9,12 +9,19 @@ let basket = document.querySelector(".basket");
 let basket__title_exit = document.querySelector(".basket__title-exit");
 index__header__image_basket.addEventListener("click", function () {
   basket.style.display = "block";
+  document.body.style.overflow = "hidden";
+  document.querySelector(".basket__conteiner-background").style.overflow =
+    "auto";
 });
 header__image_basket.addEventListener("click", function () {
   basket.style.display = "block";
+  document.body.style.overflow = "hidden";
+  document.querySelector(".basket__conteiner-background").style.overflow =
+    "auto";
 });
 basket__title_exit.addEventListener("click", function () {
   basket.style.display = "none";
+  document.body.style.overflow = "visible";
 });
 
 // Добавление в корзину
@@ -122,3 +129,25 @@ function summ__basket() {
         Number(one_basket.querySelector(".basket__shop-quantity").textContent);
   });
 }
+
+// переход в контактную информацию
+let buy = document.querySelector(".buy");
+let basket__button_shop = document.querySelector(".basket__button-shop");
+let buy__title_exit = document.querySelector(".buy__title-exit");
+let buy__summ_number = document.querySelector(".buy__summ-number");
+
+basket__button_shop.addEventListener("click", function () {
+  basket.style.display = "none";
+  buy.style.display = "block";
+  document.body.style.overflow = "hidden";
+  document.querySelector(".buy__conteiner-background").style.overflow = "auto";
+  buy__summ_number.textContent = document.querySelector(
+    ".basket__summ-number"
+  ).textContent;
+});
+buy__title_exit.addEventListener("click", function () {
+  buy.style.display = "none";
+  document.body.style.overflow = "visible";
+});
+
+//

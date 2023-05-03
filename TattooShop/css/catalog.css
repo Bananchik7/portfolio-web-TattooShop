@@ -42,6 +42,9 @@
   width: 230px;
   height: 230px;
 }
+.catalog__button__conteiner-image:hover {
+  cursor: pointer;
+}
 .catalog__button__title {
   color: white;
   font-size: 15px;
@@ -224,7 +227,10 @@
   margin-left: 70%;
   margin-top: -4%;
 }
-.basket__conteiner-bitton {
+.basket__title-exit:hover {
+  transform: scale(1.2);
+}
+.basket__conteiner-button {
   margin-top: 5%;
   margin-bottom: 3%;
   margin-left: 18%;
@@ -242,6 +248,12 @@
   font-family: "Circe", Arial, sans-serif;
   margin-right: 80px;
 }
+.basket__button-shop:hover {
+  border: 1px solid #ffb79d;
+  background: black;
+  color: #f5f5f5;
+  cursor: pointer;
+}
 .basket__button-clear {
   width: 200px;
   height: 40px;
@@ -252,6 +264,11 @@
   letter-spacing: 0.7px;
   font-weight: 400;
   font-family: "Circe", Arial, sans-serif;
+}
+.basket__button-clear:hover {
+  border: 1px solid black;
+  background: #f5f5f5;
+  cursor: pointer;
 }
 .basket__conteiner-info {
   margin-left: 10%;
@@ -336,7 +353,6 @@
   padding-top: 5%;
   padding-bottom: 5%;
 }
-
 .basket__conteiner-summ {
   display: flex;
   margin-left: 60%;
@@ -412,4 +428,133 @@
 }
 .tattoo__sortorder-250 {
   display: none;
+}
+
+/* buy */
+.buy {
+  display: none;
+}
+.buy__conteiner-background {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.buy__conteiner-background:target {
+  opacity: 1;
+  pointer-events: auto;
+  overflow-y: auto;
+}
+.buy__conteiner {
+  position: absolute;
+  width: 600px;
+  z-index: 5;
+  background: white;
+  color: #000;
+  margin-left: 30%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+.buy__conteiner-title {
+  display: flex;
+  margin-top: 7%;
+  margin-left: 7%;
+  margin-bottom: 5%;
+}
+.buy__title-title {
+  font-size: 30px;
+  letter-spacing: 0.7px;
+  font-weight: 400;
+  font-family: "Circe", Arial, sans-serif;
+}
+.buy__title-exit {
+  width: 30px;
+  height: 30px;
+  margin-left: 25%;
+  margin-top: -4%;
+}
+.buy__title-exit:hover {
+  transform: scale(1.2);
+}
+.buy__info-input {
+  width: 250px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+.buy__input-title {
+  margin-bottom: 15px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Circe", Arial, sans-serif;
+  letter-spacing: 0.7px;
+  width: 200px;
+}
+.buy__input-input {
+  width: 400px;
+  height: 30px;
+  font-size: 15px;
+  border-bottom: 1px solid #1c1c1c;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.buy__input-input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.buy__conteiner-details {
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: 150px;
+  font-size: 15px;
+  color: #6b6b6b;
+  margin-bottom: 50px;
+}
+.buy__conteiner-input {
+  width: 250px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+.buy__input-comment {
+  width: 400px;
+  height: 100px;
+  font-size: 15px;
+  border: 1px solid #1c1c1c;
+}
+.buy__input-comment:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.buy__conteiner-summ {
+  display: flex;
+  color: black;
+  letter-spacing: 0.7px;
+  font-weight: 600;
+  font-family: "Circe", Arial, sans-serif;
+  font-size: 18px;
+  margin-left: 270px;
+}
+.buy__summ-number {
+  margin-left: 20px;
+}
+.but__summ-text {
+  margin-left: 10px;
+}
+.buy__conteiner-pay {
+  width: 350px;
+  height: 50px;
+  margin-bottom: 30px;
+  margin-left: 120px;
+  margin-top: 20px;
+  font-size: 17px;
+  border: 1px solid #1c1c1c;
+  background: white;
+}
+.buy__conteiner-pay:hover {
+  border: 1px solid #ffb79d;
+  background: black;
+  color: #f5f5f5;
 }
