@@ -57,19 +57,25 @@ all_product.forEach(function (one_product) {
       //создание внутренних дивов с элементами товара
       let basket__shop_image = document.createElement("img");
       let basket__shop_name = document.createElement("div");
+      let basket__shop_quantity_minus = document.createElement("input");
       let basket__shop_quantity = document.createElement("div");
+      let basket__shop_quantity_plus = document.createElement("input");
       let basket__shop_price = document.createElement("div");
       let basket__shop_cross = document.createElement("img");
 
       basket__shop_image.className = "basket__shop-image";
       basket__shop_name.className = "basket__shop-name";
+      basket__shop_quantity_minus.className = "basket__shop-quantity-minus";
       basket__shop_quantity.className = "basket__shop-quantity";
+      basket__shop_quantity_plus.className = "basket__shop-quantity-plus";
       basket__shop_price.className = "basket__shop-price";
       basket__shop_cross.className = "basket__shop-cross";
 
       basket__conteiner_shop.appendChild(basket__shop_image);
       basket__conteiner_shop.appendChild(basket__shop_name);
+      basket__conteiner_shop.appendChild(basket__shop_quantity_minus);
       basket__conteiner_shop.appendChild(basket__shop_quantity);
+      basket__conteiner_shop.appendChild(basket__shop_quantity_plus);
       basket__conteiner_shop.appendChild(basket__shop_price);
       basket__conteiner_shop.appendChild(basket__shop_cross);
 
@@ -77,7 +83,11 @@ all_product.forEach(function (one_product) {
       basket__shop_name.textContent = one_product.querySelector(
         ".catalog__product-title"
       ).textContent;
+      basket__shop_quantity_minus.value = "-";
+      basket__shop_quantity_minus.type = "submit";
       basket__shop_quantity.textContent = "1";
+      basket__shop_quantity_plus.value = "+";
+      basket__shop_quantity_plus.type = "submit";
       basket__shop_price.textContent = one_product.querySelector(
         ".catalog__price-number"
       ).textContent;
@@ -98,6 +108,23 @@ all_product.forEach(function (one_product) {
         basket__conteiner_shop.remove();
         basket__conteiner_none.style.display = "block";
         summ__basket();
+      });
+
+      basket__shop_quantity_plus.addEventListener("click", function () {
+        basket__shop_quantity.textContent =
+          Number(basket__shop_quantity.textContent) + 1;
+        summ__basket();
+      });
+
+      basket__shop_quantity_minus.addEventListener("click", function () {
+        if (Number(basket__shop_quantity.textContent) >= 1) {
+          basket__shop_quantity.textContent =
+            Number(basket__shop_quantity.textContent) - 1;
+          summ__basket();
+        } else {
+          basket__shop_quantity.textContent = 0;
+          summ__basket();
+        }
       });
     } else {
       let basket__conteiner_shop = basket__conteiner_conteiner.querySelector(
@@ -149,5 +176,3 @@ buy__title_exit.addEventListener("click", function () {
   buy.style.display = "none";
   document.body.style.overflow = "visible";
 });
-
-//
