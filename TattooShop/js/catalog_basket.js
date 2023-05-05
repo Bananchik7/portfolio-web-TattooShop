@@ -113,6 +113,15 @@ all_product.forEach(function (one_product) {
       basket__shop_quantity_plus.addEventListener("click", function () {
         basket__shop_quantity.textContent =
           Number(basket__shop_quantity.textContent) + 1;
+
+        basket__shop_price.textContent =
+          Number(
+            one_product
+              .querySelector(".catalog__price-number")
+              .textContent.replace(/[^\d;]/g, "")
+          ) *
+            Number(basket__shop_quantity.textContent) +
+          " RUB";
         summ__basket();
       });
 
@@ -120,9 +129,25 @@ all_product.forEach(function (one_product) {
         if (Number(basket__shop_quantity.textContent) >= 1) {
           basket__shop_quantity.textContent =
             Number(basket__shop_quantity.textContent) - 1;
+          basket__shop_price.textContent =
+            Number(
+              one_product
+                .querySelector(".catalog__price-number")
+                .textContent.replace(/[^\d;]/g, "")
+            ) *
+              Number(basket__shop_quantity.textContent) +
+            " RUB";
           summ__basket();
         } else {
           basket__shop_quantity.textContent = 0;
+          basket__shop_price.textContent =
+            Number(
+              one_product
+                .querySelector(".catalog__price-number")
+                .textContent.replace(/[^\d;]/g, "")
+            ) *
+              Number(basket__shop_quantity.textContent) +
+            " RUB";
           summ__basket();
         }
       });

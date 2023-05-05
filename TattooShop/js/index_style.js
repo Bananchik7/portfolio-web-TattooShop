@@ -12,6 +12,10 @@ let index__header__scroll_text = document.querySelector(
   ".index__header__scroll-text"
 );
 index__header__scroll_text.addEventListener("click", function () {
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
   index.style.display = "none";
   catalog.style.display = "block";
   header.style.display = "block";
@@ -22,6 +26,10 @@ let index__catalog__new__title_catalog = document.querySelector(
   ".index__catalog__new__title-catalog"
 );
 index__catalog__new__title_catalog.addEventListener("click", function () {
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
   index.style.display = "none";
   catalog.style.display = "block";
   header.style.display = "block";
@@ -42,6 +50,10 @@ let index__catalog__row_info_hits = document.querySelector(
   "#index__catalog__row-info-hits"
 );
 index__catalog__row_info_tattoo.addEventListener("click", function () {
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
   index.style.display = "none";
   header.style.display = "block";
   catalog__tattoo.style.display = "block";
@@ -52,12 +64,20 @@ index__catalog__row_info_freckles.addEventListener("click", function () {
   catalog__freckles.style.display = "block";
   header.style.display = "block";
   catalog__button__conteiner.style.display = "flex";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 index__catalog__row_info_crystal.addEventListener("click", function () {
   index.style.display = "none";
   catalog__crystal.style.display = "block";
   header.style.display = "block";
   catalog__button__conteiner.style.display = "flex";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 index__catalog__row_info_hits.addEventListener("click", function () {
   index.style.display = "none";
@@ -69,6 +89,10 @@ index__catalog__row_info_hits.addEventListener("click", function () {
   catalog__sortorder_new.style.display = "none";
   catalog__sortorder_hits.style.display = "block";
   catalog__sortorder_sale.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 
 //
@@ -91,6 +115,10 @@ index__catalog__set__row_info_250.addEventListener("click", function () {
   tattoo__sortorder_moon.style.display = "none";
   tattoo__sortorder_set.style.display = "none";
   tattoo__sortorder_250.style.display = "block";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 index__catalog__set__row_info_set.addEventListener("click", function () {
   index.style.display = "none";
@@ -104,6 +132,10 @@ index__catalog__set__row_info_set.addEventListener("click", function () {
   tattoo__sortorder_moon.style.display = "none";
   tattoo__sortorder_set.style.display = "block";
   tattoo__sortorder_250.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 
 let index__catalog__figure__row_info_moon = document.querySelector(
@@ -125,6 +157,10 @@ index__catalog__figure__row_info_linii.addEventListener("click", function () {
   tattoo__sortorder_moon.style.display = "none";
   tattoo__sortorder_set.style.display = "none";
   tattoo__sortorder_250.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 index__catalog__figure__row_info_moon.addEventListener("click", function () {
   index.style.display = "none";
@@ -138,6 +174,10 @@ index__catalog__figure__row_info_moon.addEventListener("click", function () {
   tattoo__sortorder_moon.style.display = "block";
   tattoo__sortorder_set.style.display = "none";
   tattoo__sortorder_250.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 
 //
@@ -158,6 +198,10 @@ index__sale__title_catalog.addEventListener("click", function () {
   catalog__gift.style.display = "none";
   catalog__icon.style.display = "none";
   catalog__crystal.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 
 // переход в отдел доставка и оплата
@@ -180,6 +224,10 @@ header__button_delivery.addEventListener("click", function () {
   catalog__icon.style.display = "none";
   catalog__crystal.style.display = "none";
   catalog__button__conteiner.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 index__header__button_delivery.addEventListener("click", function () {
   index.style.display = "none";
@@ -194,6 +242,10 @@ index__header__button_delivery.addEventListener("click", function () {
   catalog__icon.style.display = "none";
   catalog__crystal.style.display = "none";
   catalog__button__conteiner.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 
 // переход в "как наносить"
@@ -215,6 +267,10 @@ header__button_faq.addEventListener("click", function () {
   catalog__icon.style.display = "none";
   catalog__crystal.style.display = "none";
   catalog__button__conteiner.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 index__header__button_faq.addEventListener("click", function () {
   index.style.display = "none";
@@ -229,6 +285,10 @@ index__header__button_faq.addEventListener("click", function () {
   catalog__icon.style.display = "none";
   catalog__crystal.style.display = "none";
   catalog__button__conteiner.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 
 // переход в контакты
@@ -250,6 +310,10 @@ header__button_contact.addEventListener("click", function () {
   catalog__icon.style.display = "none";
   catalog__crystal.style.display = "none";
   catalog__button__conteiner.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 index__header__button_contact.addEventListener("click", function () {
   index.style.display = "none";
@@ -264,6 +328,10 @@ index__header__button_contact.addEventListener("click", function () {
   catalog__icon.style.display = "none";
   catalog__crystal.style.display = "none";
   catalog__button__conteiner.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 
 // переход в главное меню
@@ -285,6 +353,10 @@ header__menu_logo.addEventListener("click", function () {
   catalog__icon.style.display = "none";
   catalog__crystal.style.display = "none";
   catalog__button__conteiner.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 index__header__menu_logo.addEventListener("click", function () {
   index.style.display = "block";
@@ -299,6 +371,10 @@ index__header__menu_logo.addEventListener("click", function () {
   catalog__icon.style.display = "none";
   catalog__crystal.style.display = "none";
   catalog__button__conteiner.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 
 //
@@ -320,6 +396,10 @@ header__button_catalog.addEventListener("click", function () {
   delivery.style.display = "none";
   faq.style.display = "none";
   contact.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 index__header__button_catalog.addEventListener("click", function () {
   index.style.display = "none";
@@ -334,6 +414,10 @@ index__header__button_catalog.addEventListener("click", function () {
   catalog__icon.style.display = "none";
   catalog__crystal.style.display = "none";
   catalog__button__conteiner.style.display = "flex";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 
 // footer
@@ -365,6 +449,10 @@ footer__row_point_catalog.addEventListener("click", function () {
   catalog__gift.style.display = "none";
   catalog__icon.style.display = "none";
   catalog__crystal.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 footer__row_point_contact.addEventListener("click", function () {
   index.style.display = "none";
@@ -379,6 +467,10 @@ footer__row_point_contact.addEventListener("click", function () {
   catalog__icon.style.display = "none";
   catalog__crystal.style.display = "none";
   catalog__button__conteiner.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 footer__row_point_delivery.addEventListener("click", function () {
   index.style.display = "none";
@@ -393,6 +485,10 @@ footer__row_point_delivery.addEventListener("click", function () {
   catalog__icon.style.display = "none";
   catalog__crystal.style.display = "none";
   catalog__button__conteiner.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 footer__row_point_faq.addEventListener("click", function () {
   index.style.display = "none";
@@ -407,6 +503,10 @@ footer__row_point_faq.addEventListener("click", function () {
   catalog__icon.style.display = "none";
   catalog__crystal.style.display = "none";
   catalog__button__conteiner.style.display = "none";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 footer__row_point_gift.addEventListener("click", function () {
   catalog.style.display = "none";
@@ -422,6 +522,10 @@ footer__row_point_gift.addEventListener("click", function () {
   faq.style.display = "none";
   contact.style.display = "none";
   catalog__button__conteiner.style.display = "flex";
+  window.scrollBy({
+    top: -document.documentElement.scrollHeight,
+    behavior: "smooth",
+  });
 });
 
 //

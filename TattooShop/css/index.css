@@ -195,15 +195,30 @@ li {
   z-index: -100;
 }
 .index__header__ticker {
+  min-width: 1440px;
   margin-top: 50px;
+  background: #e49d86;
+  display: flex;
+  margin-left: -30%;
+  overflow: hidden;
 }
 .index__header__ticker-marquee {
   color: white;
-  background: #e49d86;
   height: 35px;
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 0.7px;
-  padding-top: 12px;
+  padding-top: 10px;
+  animation: text 5s infinite linear;
+  white-space: nowrap;
+  padding-left: 5%;
+}
+@keyframes text {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-120% - 70px));
+  }
 }
 /* новинки на главной странице */
 .index__catalog__new__conteiner {
@@ -325,15 +340,30 @@ li {
 
 /*  */
 .index__catalog__set__ticker {
+  min-width: 1440px;
   margin-top: 50px;
+  background: #e49d86;
+  display: flex;
+  margin-left: -20%;
+  overflow: hidden;
 }
 .index__catalog__set__ticker-marquee {
   color: white;
-  background: #e49d86;
   height: 35px;
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 0.7px;
-  padding-top: 12px;
+  padding-top: 10px;
+  animation: text 3s infinite linear;
+  white-space: nowrap;
+  padding-left: 5%;
+}
+@keyframes text {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-185% - 40px));
+  }
 }
 .index__catalog__set__conteiner-row {
   display: flex;
