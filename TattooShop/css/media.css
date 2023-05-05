@@ -1,8 +1,8 @@
 @media screen and (max-width: 1366px) {
   body {
-    width: 1386px;
+    width: 1366px;
   }
   .index__header__ticker {
-    min-width: 1386px;
+    min-width: 1366px;
   }
 }

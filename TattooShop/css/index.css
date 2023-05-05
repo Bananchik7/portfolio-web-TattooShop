@@ -26,6 +26,7 @@ li {
 .header {
   display: none;
   margin: 0 auto;
+  width: 100%;
 }
 .header__conteiner {
   width: 100%;
@@ -81,7 +82,6 @@ li {
   margin-left: 10px;
   margin-right: 10px;
 }
-
 .header__menu-language {
   display: flex;
   letter-spacing: 0.7px;
@@ -96,6 +96,7 @@ li {
 /* index */
 .index__header {
   margin: 0 auto;
+  width: 100%;
 }
 .index__header__conteiner {
   width: 100%;
@@ -208,7 +209,7 @@ li {
   font-size: 18px;
   letter-spacing: 0.7px;
   padding-top: 10px;
-  animation: text 5s infinite linear;
+  animation: text 4s infinite linear;
   white-space: nowrap;
   padding-left: 5%;
 }
@@ -217,7 +218,7 @@ li {
     transform: translateX(0);
   }
   to {
-    transform: translateX(calc(-120% - 70px));
+    transform: translateX(calc(-170% - 70px));
   }
 }
 /* новинки на главной странице */
