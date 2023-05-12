@@ -383,16 +383,16 @@
 .basket__shop-quantity-minus {
   margin-top: 4.5%;
   margin-right: 3%;
-  width: 25px;
-  height: 22px;
-  font-size: 30px;
+  width: 27px;
+  height: 25px;
+  font-size: 18px;
 }
 .basket__shop-quantity-plus {
   margin-top: 4.5%;
   margin-right: 3%;
-  width: 25px;
-  height: 10px;
-  font-size: 30px;
+  width: 27px;
+  height: 25px;
+  font-size: 18px;
 }
 /* каталог тату */
 .tattoo__menu-list {

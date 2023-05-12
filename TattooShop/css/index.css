@@ -174,7 +174,7 @@ li {
   margin-left: 150px;
 }
 .index__header__conteiner-scroll {
-  margin-top: 25%;
+  margin-top: 20%;
   margin-left: 150px;
   text-decoration: underline;
   color: #ffffff;
@@ -197,7 +197,7 @@ li {
 }
 .index__header__ticker {
   min-width: 1440px;
-  margin-top: 2%;
+  margin-top: 4.1%;
   background: #e49d86;
   display: flex;
   margin-left: -30%;
