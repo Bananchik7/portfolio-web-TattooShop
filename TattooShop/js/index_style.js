@@ -551,3 +551,11 @@ otzivy__button.addEventListener("click", function () {
   otzivy.style.display = "none";
   document.body.style.overflow = "visible";
 });
+
+//
+size();
+window.addEventListener("resize", size);
+function size() {
+  console.log(document.documentElement.clientWidth);
+  document.body.style.width = document.documentElement.clientWidth + "px";
+}
